@@ -1,0 +1,6 @@
+framework module AirshipCore {
+  umbrella header "AirshipCore.h"
+
+  export *
+  module * { export * }
+}

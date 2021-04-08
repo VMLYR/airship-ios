@@ -1,0 +1,6 @@
+framework module AirshipAccengage {
+  umbrella header "AirshipAccengage.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/AirshipExtensions/AirshipNotificationContentExtension/Source/AirshipNotificationContentExtension.h",
+      "line": 6,
+      "symbol": "AirshipNotificationContentExtensionVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/AirshipExtensions/AirshipNotificationContentExtension/Source/AirshipNotificationContentExtension.h",
+      "line": 9,
+      "symbol": "AirshipNotificationContentExtensionVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

@@ -1,0 +1,6 @@
+framework module AirshipLocation {
+  umbrella header "AirshipLocation.h"
+
+  export *
+  module * { export * }
+}

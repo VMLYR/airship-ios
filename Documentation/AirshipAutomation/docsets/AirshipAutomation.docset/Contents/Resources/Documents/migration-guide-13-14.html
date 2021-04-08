@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>migration-guide-13-14  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="migration-guide-13-14  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          AirshipAutomation v14.3.1
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/urbanairship/ios-library">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">AirshipAutomation Reference</a>
+      <img class="carat" src="img/carat.png" />
+      migration-guide-13-14  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-10-11.html">migration-guide-10-11</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-11-12.html">migration-guide-11-12</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-12-13.html">migration-guide-12-13</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-13-14.html">migration-guide-13-14</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-132.html">migration-guide-13.2</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-9-10.html">migration-guide-9-10</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-legacy.html">migration-guide-legacy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAActionSchedule.html">UAActionSchedule</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAAutomationResources.html">UAAutomationResources</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes.html#/c:objc(cs)UACancelSchedulesAction">UACancelSchedulesAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppAutomation.html">UAInAppAutomation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessage.html">UAInAppMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageAssetManager.html">UAInAppMessageAssetManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageBannerAdapter.html">UAInAppMessageBannerAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageBannerDisplayContent.html">UAInAppMessageBannerDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageBannerDisplayContentBuilder.html">UAInAppMessageBannerDisplayContentBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageBannerStyle.html">UAInAppMessageBannerStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageBuilder.html">UAInAppMessageBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageButtonInfo.html">UAInAppMessageButtonInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageButtonInfoBuilder.html">UAInAppMessageButtonInfoBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageButtonStyle.html">UAInAppMessageButtonStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageCustomDisplayContent.html">UAInAppMessageCustomDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageDefaultDisplayCoordinator.html">UAInAppMessageDefaultDisplayCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageDisplayContent.html">UAInAppMessageDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageFullScreenAdapter.html">UAInAppMessageFullScreenAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageFullScreenDisplayContent.html">UAInAppMessageFullScreenDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageFullScreenDisplayContentBuilder.html">UAInAppMessageFullScreenDisplayContentBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageFullScreenStyle.html">UAInAppMessageFullScreenStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageHTMLAdapter.html">UAInAppMessageHTMLAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageHTMLDisplayContent.html">UAInAppMessageHTMLDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageHTMLDisplayContentBuilder.html">UAInAppMessageHTMLDisplayContentBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageHTMLStyle.html">UAInAppMessageHTMLStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageImmediateDisplayCoordinator.html">UAInAppMessageImmediateDisplayCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageManager.html">UAInAppMessageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageMediaInfo.html">UAInAppMessageMediaInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageMediaStyle.html">UAInAppMessageMediaStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageModalAdapter.html">UAInAppMessageModalAdapter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageModalDisplayContent.html">UAInAppMessageModalDisplayContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageModalDisplayContentBuilder.html">UAInAppMessageModalDisplayContentBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageModalStyle.html">UAInAppMessageModalStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageResolution.html">UAInAppMessageResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageSceneManager.html">UAInAppMessageSceneManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageSchedule.html">UAInAppMessageSchedule</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageTextInfo.html">UAInAppMessageTextInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageTextInfoBuilder.html">UAInAppMessageTextInfoBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAInAppMessageTextStyle.html">UAInAppMessageTextStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALandingPageAction.html">UALandingPageAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALegacyInAppMessage.html">UALegacyInAppMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALegacyInAppMessaging.html">UALegacyInAppMessaging</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UASchedule.html">UASchedule</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes.html#/c:objc(cs)UAScheduleAction">UAScheduleAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleAudience.html">UAScheduleAudience</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleAudienceBuilder.html">UAScheduleAudienceBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleBuilder.html">UAScheduleBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleDelay.html">UAScheduleDelay</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleDelayBuilder.html">UAScheduleDelayBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleEdits.html">UAScheduleEdits</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleEditsBuilder.html">UAScheduleEditsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UAScheduleTrigger.html">UAScheduleTrigger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UATagSelector.html">UATagSelector</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerAdditionalPaddingKey">UABannerAdditionalPaddingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerBodyStyleKey">UABannerBodyStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerButtonStyleKey">UABannerButtonStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerHeaderStyleKey">UABannerHeaderStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerMaxWidthKey">UABannerMaxWidthKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerMediaStyleKey">UABannerMediaStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerStyleFileName">UABannerStyleFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UABannerTextStyleKey">UABannerTextStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAButtonAdditionalPaddingKey">UAButtonAdditionalPaddingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAButtonHeightKey">UAButtonHeightKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UACancelSchedulesActionAll">UACancelSchedulesActionAll</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UACancelSchedulesActionDefaultRegistryAlias">UACancelSchedulesActionDefaultRegistryAlias</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UACancelSchedulesActionDefaultRegistryName">UACancelSchedulesActionDefaultRegistryName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UACancelSchedulesActionGroups">UACancelSchedulesActionGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UACancelSchedulesActionIDs">UACancelSchedulesActionIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenBodyStyleKey">UAFullScreenBodyStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenButtonStyleKey">UAFullScreenButtonStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenDismissIconResourceKey">UAFullScreenDismissIconResourceKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenHeaderStyleKey">UAFullScreenHeaderStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenMediaStyleKey">UAFullScreenMediaStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenStyleFileName">UAFullScreenStyleFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAFullScreenTextStyleKey">UAFullScreenTextStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLAdditionalPaddingKey">UAHTMLAdditionalPaddingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLDismissIconResourceKey">UAHTMLDismissIconResourceKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLHideDismissIconKey">UAHTMLHideDismissIconKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLMaxHeightKey">UAHTMLMaxHeightKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLMaxWidthKey">UAHTMLMaxWidthKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAHTMLStyleFileName">UAHTMLStyleFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageBannerMaxButtons">UAInAppMessageBannerMaxButtons</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageBodyKey">UAInAppMessageBodyKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageButtonInfoIDLimit">UAInAppMessageButtonInfoIDLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageButtonLayoutJoinedValue">UAInAppMessageButtonLayoutJoinedValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageButtonLayoutSeparateValue">UAInAppMessageButtonLayoutSeparateValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageButtonLayoutStackedValue">UAInAppMessageButtonLayoutStackedValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageDisplayBehaviorDefault">UAInAppMessageDisplayBehaviorDefault</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageDisplayBehaviorImmediate">UAInAppMessageDisplayBehaviorImmediate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageDisplayCoordinatorIsReadyKey">UAInAppMessageDisplayCoordinatorIsReadyKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageFullScreenMaxButtons">UAInAppMessageFullScreenMaxButtons</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageModalMaxButtons">UAInAppMessageModalMaxButtons</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAInAppMessageNameLimit">UAInAppMessageNameLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageActionDefaultRegistryAlias">UALandingPageActionDefaultRegistryAlias</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageActionDefaultRegistryName">UALandingPageActionDefaultRegistryName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageAspectLockKey">UALandingPageAspectLockKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageDefaultBorderRadiusPoints">UALandingPageDefaultBorderRadiusPoints</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageHeightKey">UALandingPageHeightKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageURLKey">UALandingPageURLKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALandingPageWidthKey">UALandingPageWidthKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UALineSpacingKey">UALineSpacingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalAdditionalPaddingKey">UAModalAdditionalPaddingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalBodyStyleKey">UAModalBodyStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalButtonStyleKey">UAModalButtonStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalDismissIconResourceKey">UAModalDismissIconResourceKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalHeaderStyleKey">UAModalHeaderStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalMaxHeightKey">UAModalMaxHeightKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalMaxWidthKey">UAModalMaxWidthKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalMediaStyleKey">UAModalMediaStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalStyleFileName">UAModalStyleFileName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAModalTextStyleKey">UAModalTextStyleKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleActionDefaultRegistryAlias">UAScheduleActionDefaultRegistryAlias</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleActionDefaultRegistryName">UAScheduleActionDefaultRegistryName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayAppStateBackgroundName">UAScheduleDelayAppStateBackgroundName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayAppStateForegroundName">UAScheduleDelayAppStateForegroundName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayAppStateKey">UAScheduleDelayAppStateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayCancellationTriggersKey">UAScheduleDelayCancellationTriggersKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayErrorDomain">UAScheduleDelayErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayMaxCancellationTriggers">UAScheduleDelayMaxCancellationTriggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayRegionKey">UAScheduleDelayRegionKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelayScreensKey">UAScheduleDelayScreensKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleDelaySecondsKey">UAScheduleDelaySecondsKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleMaxTriggers">UAScheduleMaxTriggers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerActiveSessionName">UAScheduleTriggerActiveSessionName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerAppBackgroundName">UAScheduleTriggerAppBackgroundName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerAppForegroundName">UAScheduleTriggerAppForegroundName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerAppInitName">UAScheduleTriggerAppInitName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerCustomEventCountName">UAScheduleTriggerCustomEventCountName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerCustomEventValueName">UAScheduleTriggerCustomEventValueName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerErrorDomain">UAScheduleTriggerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerGoalKey">UAScheduleTriggerGoalKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerPredicateKey">UAScheduleTriggerPredicateKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerRegionEnterName">UAScheduleTriggerRegionEnterName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerRegionExitName">UAScheduleTriggerRegionExitName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerScreenName">UAScheduleTriggerScreenName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerTypeKey">UAScheduleTriggerTypeKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAScheduleTriggerVersionName">UAScheduleTriggerVersionName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UASeparatedButtonSpacingKey">UASeparatedButtonSpacingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UAStackedButtonSpacingKey">UAStackedButtonSpacingKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Constants.html#/c:@UATextAdditonalPaddingKey">UATextAdditonalPaddingKey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enumerations.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageBannerContentLayoutType.html">UAInAppMessageBannerContentLayoutType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageBannerPlacementType.html">UAInAppMessageBannerPlacementType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageButtonInfoBehaviorType.html">UAInAppMessageButtonInfoBehaviorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageButtonLayoutType.html">UAInAppMessageButtonLayoutType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageDisplayType.html">UAInAppMessageDisplayType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageFullScreenContentLayoutType.html">UAInAppMessageFullScreenContentLayoutType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageMediaInfoType.html">UAInAppMessageMediaInfoType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageModalContentLayoutType.html">UAInAppMessageModalContentLayoutType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessagePrepareResult.html">UAInAppMessagePrepareResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageResolutionType.html">UAInAppMessageResolutionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageTextInfoAlignmentType.html">UAInAppMessageTextInfoAlignmentType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAInAppMessageTextInfoStyleType.html">UAInAppMessageTextInfoStyleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UALegacyInAppMessageDisplayType.html">UALegacyInAppMessageDisplayType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UALegacyInAppMessagePosition.html">UALegacyInAppMessagePosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleActionErrorCode.html">UAScheduleActionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleAudienceMissBehaviorType.html">UAScheduleAudienceMissBehaviorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleDelayAppState.html">UAScheduleDelayAppState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleDelayErrorCode.html">UAScheduleDelayErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleTriggerErrorCode.html">UAScheduleTriggerErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/UAScheduleTriggerType.html">UAScheduleTriggerType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessageAdapterProtocol.html">UAInAppMessageAdapterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessageCachePolicyDelegate.html">UAInAppMessageCachePolicyDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessageDisplayCoordinator.html">UAInAppMessageDisplayCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessagePrepareAssetsDelegate.html">UAInAppMessagePrepareAssetsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessageSceneDelegate.html">UAInAppMessageSceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessageStyleProtocol.html">UAInAppMessageStyleProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UAInAppMessagingDelegate.html">UAInAppMessagingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UALandingPageBuilderExtender.html">UALandingPageBuilderExtender</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UALegacyInAppMessageBuilderExtender.html">UALegacyInAppMessageBuilderExtender</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UALegacyInAppMessageFactoryDelegate.html">UALegacyInAppMessageFactoryDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='airship-ios-sdk-13-2-to-14-0-migration-guide' class='heading'>Airship iOS SDK 13.2 to 14.0 Migration Guide</h1>
+
+<p>Airship SDK 14 is a major update that prepares our automation module to support future IAA enhancements, revamps our Channel Capture tool, improves support for Xcode 12 &amp; iOS 14, and provides other improvements.</p>
+<h2 id='uawhitelist-is-now-uaurlallowlist' class='heading'>UAWhitelist is now UAURLAllowList</h2>
+
+<p>We have renamed <code>UAWhitelist</code> to <code>UAURLAllowList</code>. In addition to the class, many properties, methods and constants have been renamed.</p>
+
+<p>There are now three URLAllowList keys that can be added to <code>AirshipConfig.plist</code>:</p>
+
+<ul>
+<li><code>URLAllowList</code>: The list used to validate which URLs can be opened or can load the JavaScript native bridge. This key was previously named <code>whitelist</code>.</li>
+<li><code>URLAllowListScopeOpenURL</code>: The list used to validate which URLs can be opened.</li>
+<li><code>URLAllowListScopeJavaScriptInterface</code>: The list used to validate which URLs can load the JavaScript native bridge.</li>
+</ul>
+
+<p>The values for any of the three keys are arrays of patterns that are matched to the URL. See <a href="https://docs.airship.com/reference/libraries/ios/latest/Airship/Classes.html#/c:objc%28cs%29UAURLAllowList">UAURLAllowList</a> for the syntax of the pattern entries.</p>
+
+<hr>
+<h3 id='warning-behavior-change' class='heading'>WARNING (Behavior Change)</h3>
+
+<p><strong>The <code>openURLWhitelistingEnabled</code> config key has been removed. OpenURL-scoped URLs are now always verified. This will likely cause the Open URL and Landing Page actions to no longer work if you are using the default for that key (<code>NO</code>). To fix this issue, add a wildcard (<code>*</code>) entry to the new <code>URLAllowListScopeOpenURL</code> key in AirshipConfig.plist. This will allow any URLs for those actions.</strong></p>
+
+<hr>
+<h2 id='automation-changes' class='heading'>Automation Changes</h2>
+<h3 id='standard-in-app-messages' class='heading'>Standard In-App Messages</h3>
+
+<p>In <code><a href="Protocols/UALegacyInAppMessageBuilderExtender.html">UALegacyInAppMessageBuilderExtender</a></code> the method <code>extendScheduleInfoBuilder:message:</code> has been renamed to <a href="https://docs.airship.com/reference/libraries/ios/latest/Airship/Protocols/UALegacyInAppMessageBuilderExtender.html#/c:objc(pl)UALegacyInAppMessageBuilderExtender(im)extendScheduleBuilder:message:"><code>extendScheduleBuilder:message:</code></a>. It is passed a <a href="https://docs.airship.com/reference/libraries/ios/latest/Airship/Classes/UAScheduleBuilder.html"><code><a href="Classes/UAScheduleBuilder.html">UAScheduleBuilder</a></code></a> object instead of the now removed <code>UAInAppMessageScheduleInfoBuilder</code> object. All of the properties that used to exist in <code>UAInAppMessageScheduleInfoBuilder</code> are now available on `<code><a href="Classes/UAScheduleBuilder.html">UAScheduleBuilder</a></code>.</p>
+
+<p>For example, the following is our pre-SDK 14 <a href="https://docs.airship.com/platform/ios/in-app-automation/#standard">Example UALegacyInAppMessageBuilderExtender</a>:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">extendScheduleInfoBuilder</span><span class="p">:(</span><span class="n">UAInAppMessageScheduleInfoBuilder</span> <span class="o">*</span><span class="p">)</span><span class="nv">builder</span>
+                          <span class="nf">message</span><span class="p">:(</span><span class="n">UALegacyInAppMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span> <span class="p">{</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">extendMessageBuilder</span><span class="p">:(</span><span class="n">UAInAppMessageBuilder</span> <span class="o">*</span><span class="p">)</span><span class="nv">builder</span>
+                     <span class="nf">message</span><span class="p">:(</span><span class="n">UALegacyInAppMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span> <span class="p">{</span>
+    <span class="n">UAInAppMessageBannerDisplayContent</span> <span class="o">*</span><span class="n">bannerDisplayContent</span> <span class="o">=</span> <span class="p">(</span><span class="n">UAInAppMessageBannerDisplayContent</span> <span class="o">*</span><span class="p">)</span> <span class="n">builder</span><span class="p">.</span><span class="n">displayContent</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">bannerDisplayContent</span> <span class="nf">extend</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAInAppMessageBannerDisplayContentBuilder</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">builder</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">builder</span><span class="p">.</span><span class="n">borderRadiusPoints</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="p">}];</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">displayContent</span> <span class="o">=</span> <span class="n">bannerDisplayContent</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The example updated for the new SDK 14 API:</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">extendScheduleBuilder</span><span class="p">:(</span><span class="n">UAScheduleBuilder</span> <span class="o">*</span><span class="p">)</span><span class="nv">builder</span>
+                      <span class="nf">message</span><span class="p">:(</span><span class="n">UALegacyInAppMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span> <span class="p">{</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">extendMessageBuilder</span><span class="p">:(</span><span class="n">UAInAppMessageBuilder</span> <span class="o">*</span><span class="p">)</span><span class="nv">builder</span>
+                     <span class="nf">message</span><span class="p">:(</span><span class="n">UALegacyInAppMessage</span> <span class="o">*</span><span class="p">)</span><span class="nv">message</span> <span class="p">{</span>
+    <span class="n">UAInAppMessageBannerDisplayContent</span> <span class="o">*</span><span class="n">bannerDisplayContent</span> <span class="o">=</span> <span class="p">(</span><span class="n">UAInAppMessageBannerDisplayContent</span> <span class="o">*</span><span class="p">)</span> <span class="n">builder</span><span class="p">.</span><span class="n">displayContent</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">bannerDisplayContent</span> <span class="nf">extend</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAInAppMessageBannerDisplayContentBuilder</span> <span class="o">*</span> <span class="n">_Nonnull</span> <span class="n">builder</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">builder</span><span class="p">.</span><span class="n">borderRadiusPoints</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="p">}];</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">displayContent</span> <span class="o">=</span> <span class="n">bannerDisplayContent</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>The required changes are limited to the method signature for <code>extendMessageBuilder:message:</code>. The builder code remains the same.</p>
+<h3 id='in-app-automation-api' class='heading'>In-App Automation API</h3>
+
+<p>The properties from the <code>UAInAppMessageScheduleInfo</code> class have been merged into the <code><a href="Classes/UAInAppMessageSchedule.html">UAInAppMessageSchedule</a></code> class. Instances are created using the <code>scheduleWithMessage:builderBlock:</code> class method.</p>
+
+<ul>
+<li><code>UAInAppMessageAudience</code> has been renamed <code><a href="Classes/UAScheduleAudience.html">UAScheduleAudience</a></code>, and has been moved from <code><a href="Classes/UAInAppMessage.html">UAInAppMessage</a></code> to <code><a href="Classes/UAInAppMessageSchedule.html">UAInAppMessageSchedule</a></code>. The <code>UAInAppMessageAudienceMissBehaviorType</code> enum has been renamed <code><a href="Enums/UAScheduleAudienceMissBehaviorType.html">UAScheduleAudienceMissBehaviorType</a></code>.</li>
+<li><code><a href="Classes/UAInAppMessage.html">UAInAppMessage</a></code> no longer has an <code>identifier</code> property. The <code><a href="Classes/UAInAppMessageSchedule.html">UAInAppMessageSchedule</a></code> identifier property is now used instead.</li>
+</ul>
+
+<p>Note: The first time SDK 14 runs it will migrate existing in-app automations, setting the schedule identifier of each existing schedule to the message&rsquo;s identifier, as long as the message identifiers are unique. If your app&rsquo;s message identifiers are all unique, they can be used as the schedule identifiers when accessing schedules after migration. If your message identifiers are not unique, follow this process to map your existing message identifiers to the new schedule identifiers:</p>
+
+<ol>
+<li>During the migration, the existing message identifier and schedule identifier will be added to the metadata for each schedule, under the keys <code>com.urbanairship.original_message_id</code> and <code>com.urbanairship.original_schedule_id</code>, respectively.</li>
+<li>After the migration, your code can use the methods in the <a href="#retrieving-in-app-automation-schedules">Retrieving In-App Automation Schedules</a> section below to loop through all schedules, mapping your app&rsquo;s previous message and schedule identifiers to the new schedule identifiers.</li>
+</ol>
+<h4 id='scheduling-in-app-automation-schedules' class='heading'>Scheduling In-App Automation Schedules</h4>
+<pre class="highlight objective_c"><code><span class="c1">// Schedule one in-app automation schedule</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">schedule</span><span class="p">:</span><span class="n">schedule</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Schedule result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+<span class="p">}];</span>
+
+<span class="c1">// Schedule multiple in-app automation schedule</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">scheduleMultiple</span><span class="p">:</span><span class="n">schedules</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Schedule multiple result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+<span class="p">}];</span>
+</code></pre>
+<h4 id='retrieving-in-app-automation-schedules' class='heading'>Retrieving In-App Automation Schedules</h4>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getMessageScheduleWithID</span><span class="p">:</span><span class="n">identifier</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAInAppMessageSchedule</span> <span class="o">*</span><span class="n">schedule</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get schedule</span>
+<span class="p">}];</span>
+
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getMessageSchedules</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UAInAppMessageSchedule</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">schedules</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get all schedules</span>
+<span class="p">}];</span>
+
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getMessageSchedulesWithGroup</span><span class="p">:</span><span class="s">@"group_name"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UAInAppMessageSchedule</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">actionSchedules</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get all schedules of the given group.</span>
+<span class="p">}];</span>
+</code></pre>
+<h4 id='canceling-in-app-automation-schedules' class='heading'>Canceling In-App Automation Schedules</h4>
+
+<p>Methods for canceling a single schedule or a group of schedules have also been moved from <code>UAActionAutomation</code> to <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code>. There is no longer a method for canceling all schedules.</p>
+<pre class="highlight objective_c"><code><span class="c1">// Cancels a schedule with the given identifier</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">cancelScheduleWithID</span><span class="p">:</span><span class="s">@"some_scheduled_identifier"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Cancel result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+<span class="p">}];</span>
+
+<span class="c1">// Cancels all schedules of the given group</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">cancelMessageSchedulesWithGroup</span><span class="p">:</span><span class="s">@"some_group_name"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Cancel result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+
+<span class="p">}];</span>
+</code></pre>
+<h3 id='action-automation-api' class='heading'>Action Automation API</h3>
+
+<p>The <code>UAActionScheduleInfo</code> class has been replaced by the <code><a href="Classes/UAActionSchedule.html">UAActionSchedule</a></code> class. Instances are created using the <code>scheduleWithActions:builderBlock:</code> class method. Schedule the action schedule instance using <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code>&lsquo;s <code>schedule:completionHandler:</code> or <code>scheduleMultiple:completionHandler:</code> methods.</p>
+<h4 id='scheduling-actions' class='heading'>Scheduling Actions</h4>
+
+<p>The <code>UAActionAutomation</code> method <code>scheduleActions:completionHandler:</code> has been moved to <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code> and renamed <code>schedule:completionHandler:</code>. It is passed a <code><a href="Classes/UASchedule.html">UASchedule</a></code> object instead of the now removed <code>UAActionScheduleInfo</code>. All of the properties that used to exist in <code>UAActionScheduleInfo</code> are now available on `<code><a href="Classes/UAScheduleBuilder.html">UAScheduleBuilder</a></code>.</p>
+
+<p>For example, the following is our pre-SDK 14 <a href="https://docs.airship.com/platform/ios/advanced/action-automation/#scheduling-actions">scheduling actions example</a>:</p>
+<pre class="highlight objective_c"><code><span class="c1">// Build the schedule info</span>
+<span class="n">UAActionScheduleInfo</span> <span class="o">*</span><span class="n">scheduleInfo</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAActionScheduleInfo</span> <span class="nf">actionScheduleInfoWithBuilderBlock</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAActionScheduleInfoBuilder</span> <span class="o">*</span><span class="n">builder</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">UAJSONValueMatcher</span> <span class="o">*</span><span class="n">valueMatcher</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONValueMatcher</span> <span class="nf">matcherWhereStringEquals</span><span class="p">:</span><span class="s">@"name"</span><span class="p">];</span>
+    <span class="n">UAJSONMatcher</span> <span class="o">*</span><span class="n">jsonMatcher</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONMatcher</span> <span class="nf">matcherWithValueMatcher</span><span class="p">:</span><span class="n">valueMatcher</span> <span class="nf">scope</span><span class="p">:@[</span><span class="n">UACustomEventNameKey</span><span class="p">]];</span>
+    <span class="n">UAJSONPredicate</span> <span class="o">*</span><span class="n">predicate</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONPredicate</span> <span class="nf">predicateWithJSONMatcher</span><span class="p">:</span><span class="n">jsonMatcher</span><span class="p">];</span>
+
+    <span class="n">UAScheduleTrigger</span> <span class="o">*</span><span class="n">customEventTrigger</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAScheduleTrigger</span> <span class="nf">customEventTriggerWithPredicate</span><span class="p">:</span><span class="n">predicate</span> <span class="nf">count</span><span class="p">:</span><span class="mi">2</span><span class="p">];</span>
+    <span class="n">UAScheduleTrigger</span> <span class="o">*</span><span class="n">foregroundEventTrigger</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAScheduleTrigger</span> <span class="nf">foregroundTriggerWithCount</span><span class="p">:</span><span class="mi">2</span><span class="p">];</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">actions</span> <span class="o">=</span> <span class="p">@{</span><span class="s">@"add_tags_action"</span><span class="o">:</span> <span class="s">@"my_tag"</span><span class="p">};</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">triggers</span> <span class="o">=</span> <span class="p">@[</span><span class="n">customEventTrigger</span><span class="p">,</span> <span class="n">foregroundEventTrigger</span><span class="p">];</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">group</span> <span class="o">=</span> <span class="s">@"group_name"</span><span class="p">;</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSDate</span> <span class="nf">dateWithTimeIntervalSinceNow</span><span class="p">:</span><span class="mi">10</span><span class="p">];</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSDate</span> <span class="nf">dateWithTimeIntervalSinceNow</span><span class="p">:</span><span class="mi">1000</span><span class="p">];</span>
+<span class="p">}];</span>
+
+<span class="c1">// Schedule the schedule info</span>
+<span class="p">[[</span><span class="n">UAirship</span> <span class="nf">automation</span><span class="p">]</span> <span class="nf">scheduleActions</span><span class="p">:</span><span class="n">scheduleInfo</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UASchedule</span> <span class="o">*</span><span class="n">schedule</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Unique schedule identifier: %@"</span><span class="p">,</span> <span class="n">schedule</span><span class="p">.</span><span class="n">identifier</span><span class="p">);</span>
+<span class="p">}];</span>
+</code></pre>
+
+<p>The example updated for the new SDK 14 API:</p>
+<pre class="highlight objective_c"><code><span class="c1">// Build the action schedule</span>
+<span class="n">UAActionSchedule</span> <span class="o">*</span><span class="n">schedule</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAActionSchedule</span> <span class="nf">scheduleWithActions</span><span class="p">:@{</span><span class="s">@"add_tags_action"</span><span class="o">:</span> <span class="s">@"my_tag"</span><span class="p">}</span> <span class="nf">builderBlock</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAScheduleBuilder</span> <span class="o">*</span><span class="n">builder</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">UAJSONValueMatcher</span> <span class="o">*</span><span class="n">valueMatcher</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONValueMatcher</span> <span class="nf">matcherWhereStringEquals</span><span class="p">:</span><span class="s">@"name"</span><span class="p">];</span>
+    <span class="n">UAJSONMatcher</span> <span class="o">*</span><span class="n">jsonMatcher</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONMatcher</span> <span class="nf">matcherWithValueMatcher</span><span class="p">:</span><span class="n">valueMatcher</span> <span class="nf">scope</span><span class="p">:@[</span><span class="n">UACustomEventNameKey</span><span class="p">]];</span>
+    <span class="n">UAJSONPredicate</span> <span class="o">*</span><span class="n">predicate</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAJSONPredicate</span> <span class="nf">predicateWithJSONMatcher</span><span class="p">:</span><span class="n">jsonMatcher</span><span class="p">];</span>
+
+    <span class="n">UAScheduleTrigger</span> <span class="o">*</span><span class="n">customEventTrigger</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAScheduleTrigger</span> <span class="nf">customEventTriggerWithPredicate</span><span class="p">:</span><span class="n">predicate</span> <span class="nf">count</span><span class="p">:</span><span class="mi">2</span><span class="p">];</span>
+    <span class="n">UAScheduleTrigger</span> <span class="o">*</span><span class="n">foregroundEventTrigger</span> <span class="o">=</span> <span class="p">[</span><span class="n">UAScheduleTrigger</span> <span class="nf">foregroundTriggerWithCount</span><span class="p">:</span><span class="mi">2</span><span class="p">];</span>
+
+    <span class="n">builder</span><span class="p">.</span><span class="n">triggers</span> <span class="o">=</span> <span class="p">@[</span><span class="n">customEventTrigger</span><span class="p">,</span> <span class="n">foregroundEventTrigger</span><span class="p">];</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">group</span> <span class="o">=</span> <span class="s">@"group_name"</span><span class="p">;</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">limit</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">start</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSDate</span> <span class="nf">dateWithTimeIntervalSinceNow</span><span class="p">:</span><span class="mi">10</span><span class="p">];</span>
+    <span class="n">builder</span><span class="p">.</span><span class="n">end</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSDate</span> <span class="nf">dateWithTimeIntervalSinceNow</span><span class="p">:</span><span class="mi">1000</span><span class="p">];</span>
+<span class="p">}];</span>
+
+<span class="c1">// Schedule the action schedule</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">schedule</span><span class="p">:</span><span class="n">schedule</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Schedule result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+<span class="p">}];</span>
+</code></pre>
+
+<p>The required changes are in the <code>UAActionSchedule *schedule = ...</code> line, and in the call to and the completion handler for the <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code> <code>schedule:completionHandler</code> method. The builder code remains the same.</p>
+<h4 id='retrieving-action-schedules' class='heading'>Retrieving Action Schedules</h4>
+
+<p>Similarly, the methods for retrieving a single schedule, a group of schedules, or all schedules have moved from <code>UAActionAutomation</code> to <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code>.</p>
+<pre class="highlight objective_c"><code><span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getActionScheduleWithID</span><span class="p">:</span><span class="n">identifier</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">UAActionSchedule</span> <span class="o">*</span><span class="n">schedule</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get schedule</span>
+<span class="p">}];</span>
+
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getActionSchedules</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UAActionSchedule</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">schedules</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get all schedules</span>
+<span class="p">}];</span>
+
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">getActionSchedulesWithGroup</span><span class="p">:</span><span class="s">@"group_name"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">UAActionSchedule</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">actionSchedules</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// get all schedules of the given group.</span>
+<span class="p">}];</span>
+</code></pre>
+<h4 id='canceling-action-schedules' class='heading'>Canceling Action Schedules</h4>
+
+<p>Methods for canceling a single schedule or a group of schedules have also been moved from <code>UAActionAutomation</code> to <code><a href="Classes/UAInAppAutomation.html">UAInAppAutomation</a></code>. There is no longer a method for canceling all schedules.</p>
+<pre class="highlight objective_c"><code><span class="c1">// Cancels a schedule with the given identifier</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">cancelScheduleWithID</span><span class="p">:</span><span class="s">@"some_scheduled_identifier"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Cancel result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+<span class="p">}];</span>
+
+<span class="c1">// Cancels all schedules of the given group</span>
+<span class="p">[[</span><span class="n">UAInAppAutomation</span> <span class="nf">shared</span><span class="p">]</span> <span class="nf">cancelActionSchedulesWithGroup</span><span class="p">:</span><span class="s">@"some_group_name"</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">BOOL</span> <span class="n">result</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">NSLog</span><span class="p">(</span><span class="s">@"Cancel result = %@"</span><span class="p">,</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">?</span> <span class="s">@"YES"</span> <span class="p">:</span> <span class="s">@"NO"</span><span class="p">);</span>
+
+<span class="p">}];</span>
+</code></pre>
+<h2 id='channel-capture-changes' class='heading'>Channel Capture Changes</h2>
+
+<p>The <a href="https://docs.airship.com/platform/ios/advanced/channel-capture-tool/">Channel Capture tool</a> has been completely revamped.</p>
+
+<p>The channel capture tool now defaults to enabled unless disabled using the <code>channelCaptureEnabled</code> key in <code>AirshipConfig.plist</code>. When the channel capture tool is enabled, the user can &ldquo;capture&rdquo; the channel id by &ldquo;knocking&rdquo; 6 times within 30 seconds. The user knocks by moving the app from the background into the foreground, i.e. exiting the app and then running the app. When the channel channel is captured, it is copied to the clipboard with a leading &ldquo;ua:&rdquo;. If there is no channel, only the &ldquo;ua:&rdquo; will be present. The channel will remain on the clipboard for 60 seconds.</p>
+
+<p>The channel capture tool can be programatically enabled or disabled using the new <code>enable</code> property. This enable state no longer persists through app init, and will instead revert to the value of the  <code>channelCaptureEnabled</code> key in <code>AirshipConfig.plist</code>. It is no longer possible to enable channel capture for a specified amount of time.</p>
+
+<p>The disable method has been removed. To programatically disable, simply set the <code>enable</code> property to <code>NO</code>.</p>
+
+<p>The channel capture action has been removed. If your app depended on the channel capture action to enable or disable the channel capture tool, it will need to use another technique.</p>
+<h2 id='xcode-12-ios-14-support' class='heading'>Xcode 12 / iOS 14 support</h2>
+
+<p>The <code>UAMessageCenterStyle *style</code> property in our Message Center view classes conflicts with Apple&rsquo;s new iOS 14 style property <code>UISplitViewControllerStyle style</code> in <code>UISplitViewController</code>. To resolve the conflict, we have renamed our <code>style</code> property to <code>messageCenterStyle</code> in all Message Center view classes:</p>
+
+<ul>
+<li><code>UADefaultMessageCenterListViewController</code></li>
+<li><code>UADefaultMessageCenterSplitViewController</code></li>
+<li><code>UADefaultMessageCenterUI</code></li>
+<li><code>UAMessageCenterListCell</code></li>
+</ul>
+<h2 id='deprecated-code' class='heading'>Deprecated code</h2>
+
+<p>We have removed all code that was deprecated and targeted for removal in SDK 14. The following sections list what was removed and include recommended replacement functionality.</p>
+<h3 id='renamed-classes-and-related-files' class='heading'>Renamed classes and related files</h3>
+
+<table><thead>
+<tr>
+<th>Old Name</th>
+<th>Replacement</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>UAMessageCenterListViewController</code></td>
+<td><code>UADefaultMessageCenterListViewController</code></td>
+</tr>
+<tr>
+<td><code>UAMessageCenterListViewController.xib</code></td>
+<td><code>UADefaultMessageCenterListViewController.xib</code></td>
+</tr>
+<tr>
+<td><code>UAMessageCenterMessageViewController</code></td>
+<td><code>UADefaultMessageCenterMessageViewController</code></td>
+</tr>
+<tr>
+<td><code>UAMessageCenterMessageViewController.xib</code></td>
+<td><code>UADefaultMessageCenterMessageViewController.xib</code></td>
+</tr>
+<tr>
+<td><code>UAMessageCenterMessageViewProtocol.h</code></td>
+<td>The protocol has been removed. Use properties and methods of <code>UADefaultMessageCenterMessageViewController</code>.</td>
+</tr>
+<tr>
+<td><code>UAMessageCenterSplitViewController</code></td>
+<td><code>UADefaultMessageCenterSplitViewController</code></td>
+</tr>
+</tbody></table>
+<h3 id='renamed-constants' class='heading'>Renamed constants</h3>
+
+<table><thead>
+<tr>
+<th>Old Name</th>
+<th>Replacement</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>kUAAddCustomEventActionDefaultRegistryName</code></td>
+<td><code>UAAddCustomEventActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAAddTagsActionDefaultRegistryAlias</code></td>
+<td><code>UAAddTagsActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAAddTagsActionDefaultRegistryName</code></td>
+<td><code>UAAddTagsActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUACancelSchedulesActionDefaultRegistryAlias</code></td>
+<td><code><a href="Constants.html#/c:@UACancelSchedulesActionDefaultRegistryAlias">UACancelSchedulesActionDefaultRegistryAlias</a></code></td>
+</tr>
+<tr>
+<td><code>kUACancelSchedulesActionDefaultRegistryName</code></td>
+<td><code><a href="Constants.html#/c:@UACancelSchedulesActionDefaultRegistryName">UACancelSchedulesActionDefaultRegistryName</a></code></td>
+</tr>
+<tr>
+<td><code>kUACircularRegionKey</code></td>
+<td><code>UACircularRegionKey</code></td>
+</tr>
+<tr>
+<td><code>kUACircularRegionMaxRadius</code></td>
+<td><code>UACircularRegionMaxRadius</code></td>
+</tr>
+<tr>
+<td><code>kUACircularRegionMinRadius</code></td>
+<td><code>UACircularRegionMinRadius</code></td>
+</tr>
+<tr>
+<td><code>kUACircularRegionRadiusKey</code></td>
+<td><code>UACircularRegionRadiusKey</code></td>
+</tr>
+<tr>
+<td><code>kUAConnectionTypeCell</code></td>
+<td><code>UAConnectionTypeCell</code></td>
+</tr>
+<tr>
+<td><code>kUAConnectionTypeNone</code></td>
+<td><code>UAConnectionTypeNone</code></td>
+</tr>
+<tr>
+<td><code>kUAConnectionTypeWifi</code></td>
+<td><code>UAConnectionTypeWifi</code></td>
+</tr>
+<tr>
+<td><code>kUADeepLinkActionDefaultRegistryAlias</code></td>
+<td><code>UADeepLinkActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUADeepLinkActionDefaultRegistryName</code></td>
+<td><code>UADeepLinkActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAEnableFeatureActionDefaultRegistryAlias</code></td>
+<td><code>UAEnableFeatureActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAEnableFeatureActionDefaultRegistryName</code></td>
+<td><code>UAEnableFeatureActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAFetchDeviceInfoActionDefaultRegistryAlias</code></td>
+<td><code>UAFetchDeviceInfoActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAFetchDeviceInfoActionDefaultRegistryName</code></td>
+<td><code>UAFetchDeviceInfoActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAInteractionMCRAP</code></td>
+<td><code>UAInteractionMCRAP</code></td>
+</tr>
+<tr>
+<td><code>kUALandingPageActionDefaultRegistryAlias</code></td>
+<td><code><a href="Constants.html#/c:@UALandingPageActionDefaultRegistryAlias">UALandingPageActionDefaultRegistryAlias</a></code></td>
+</tr>
+<tr>
+<td><code>kUALandingPageActionDefaultRegistryName</code></td>
+<td><code><a href="Constants.html#/c:@UALandingPageActionDefaultRegistryName">UALandingPageActionDefaultRegistryName</a></code></td>
+</tr>
+<tr>
+<td><code>kUAOpenExternalURLActionDefaultRegistryAlias</code></td>
+<td><code>UAOpenExternalURLActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAOpenExternalURLActionDefaultRegistryName</code></td>
+<td><code>UAOpenExternalURLActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAPasteboardActionDefaultRegistryAlias</code></td>
+<td><code>UAPasteboardActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAPasteboardActionDefaultRegistryName</code></td>
+<td><code>UAPasteboardActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionIDKey</code></td>
+<td><code>UAProximityRegionIDKey</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionKey</code></td>
+<td><code>UAProximityRegionKey</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionMajorKey</code></td>
+<td><code>UAProximityRegionMajorKey</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionMaxRSSI</code></td>
+<td><code>UAProximityRegionMaxRSSI</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionMinRSSI</code></td>
+<td><code>UAProximityRegionMinRSSI</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionMinorKey</code></td>
+<td><code>UAProximityRegionMinorKey</code></td>
+</tr>
+<tr>
+<td><code>kUAProximityRegionRSSIKey</code></td>
+<td><code>UAProximityRegionRSSIKey</code></td>
+</tr>
+<tr>
+<td><code>kUARateAppActionDefaultRegistryAlias</code></td>
+<td><code>UARateAppActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUARateAppActionDefaultRegistryName</code></td>
+<td><code>UARateAppActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUARegionBoundaryEventEnterValue</code></td>
+<td><code>UARegionBoundaryEventEnterValue</code></td>
+</tr>
+<tr>
+<td><code>kUARegionBoundaryEventExitValue</code></td>
+<td><code>UARegionBoundaryEventExitValue</code></td>
+</tr>
+<tr>
+<td><code>kUARegionBoundaryEventKey</code></td>
+<td><code>UARegionBoundaryEventKey</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMaxCharacters</code></td>
+<td><code>UARegionEventMaxCharacters</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMaxLatitude</code></td>
+<td><code>UARegionEventMaxLatitude</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMaxLongitude</code></td>
+<td><code>UARegionEventMaxLongitude</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMinCharacters</code></td>
+<td><code>UARegionEventMinCharacters</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMinLatitude</code></td>
+<td><code>UARegionEventMinLatitude</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventMinLongitude</code></td>
+<td><code>UARegionEventMinLongitude</code></td>
+</tr>
+<tr>
+<td><code>kUARegionEventType</code></td>
+<td><code>UARegionEventType</code></td>
+</tr>
+<tr>
+<td><code>kUARegionIDKey</code></td>
+<td><code>UARegionIDKey</code></td>
+</tr>
+<tr>
+<td><code>kUARegionLatitudeKey</code></td>
+<td><code>UARegionLatitudeKey</code></td>
+</tr>
+<tr>
+<td><code>kUARegionLongitudeKey</code></td>
+<td><code>UARegionLongitudeKey</code></td>
+</tr>
+<tr>
+<td><code>kUARegionSourceKey</code></td>
+<td><code>UARegionSourceKey</code></td>
+</tr>
+<tr>
+<td><code>kUARemoveTagsActionDefaultRegistryAlias</code></td>
+<td><code>UARemoveTagsActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUARemoveTagsActionDefaultRegistryName</code></td>
+<td><code>UARemoveTagsActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAScheduleActionDefaultRegistryAlias</code></td>
+<td><code><a href="Constants.html#/c:@UAScheduleActionDefaultRegistryAlias">UAScheduleActionDefaultRegistryAlias</a></code></td>
+</tr>
+<tr>
+<td><code>kUAScheduleActionDefaultRegistryName</code></td>
+<td><code><a href="Constants.html#/c:@UAScheduleActionDefaultRegistryName">UAScheduleActionDefaultRegistryName</a></code></td>
+</tr>
+<tr>
+<td><code>kUAShareActionDefaultRegistryAlias</code></td>
+<td><code>UAShareActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAShareActionDefaultRegistryName</code></td>
+<td><code>UAShareActionDefaultRegistryName</code></td>
+</tr>
+<tr>
+<td><code>kUAWalletActionDefaultRegistryAlias</code></td>
+<td><code>UAWalletActionDefaultRegistryAlias</code></td>
+</tr>
+<tr>
+<td><code>kUAWalletActionDefaultRegistryName</code></td>
+<td><code>UAWalletActionDefaultRegistryName</code></td>
+</tr>
+</tbody></table>
+<h3 id='uacustomevent-methods-removed' class='heading'>UACustomEvent methods removed</h3>
+
+<p>The following methods used to set typed properties on <code>UACustomEvent</code> have been removed.</p>
+
+<ul>
+<li><code>setBoolProperty:forKey:</code></li>
+<li><code>setStringProperty:forKey:</code></li>
+<li><code>setNumberProperty:forKey:</code></li>
+<li><code>setStringArrayProperty:forKey:</code></li>
+</ul>
+
+<p>Instead use the <code>properties</code> property of <code>UACustomEvent</code>. <code>properties</code> must be valid JSON:</p>
+
+<ul>
+<li>All objects are <code>NSString</code>, <code>NSNumber</code>, <code>NSArray</code>, <code>NSDictionary</code>, or <code>NSNull</code></li>
+<li>All dictionary keys are <code>NSStrings</code></li>
+<li><code>NSNumbers</code> are not <code>NaN</code> or infinity</li>
+</ul>
+<h3 id='uapush-methods-and-properties-renamed-and-moved' class='heading'>UAPush methods and properties renamed and moved</h3>
+
+<p><code>presentationOptionsForNotification:</code> has been renamed <code>extendPresentationOptions:notification:</code>.</p>
+<h4 id='methods-moved-to-uachannel' class='heading'>Methods moved to UAChannel</h4>
+
+<ul>
+<li><code>addTag:</code></li>
+<li><code>addTags:</code></li>
+<li><code>removeTag:</code></li>
+<li><code>removeTags:</code></li>
+<li><code>addTags:group:</code></li>
+<li><code>removeTags:group:</code></li>
+<li><code>setTags:group:</code></li>
+<li><code>enableChannelCreation</code></li>
+</ul>
+<h4 id='properties-moved-to-uachannel' class='heading'>Properties moved to UAChannel</h4>
+
+<ul>
+<li><code>channelID</code> (renamed <code>identifier</code>)</li>
+<li><code>tags</code></li>
+<li><code>channelTagRegistrationEnabled</code></li>
+</ul>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://urbanairship.com" target="_blank" rel="external">Urban Airship</a>. All rights reserved. (Last updated: 2021-04-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,0 +1,6 @@
+framework module AirshipMessageCenter {
+  umbrella header "AirshipMessageCenter.h"
+
+  export *
+  module * { export * }
+}

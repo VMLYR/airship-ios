@@ -1,0 +1,166 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/AirshipAutomation.h",
+      "line": 9,
+      "symbol": "AirshipAutomationVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/AirshipAutomation.h",
+      "line": 12,
+      "symbol": "AirshipAutomationVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageAssets.h",
+      "line": 7,
+      "symbol": "UAInAppMessageAssets",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDefaultPrepareAssetsDelegate.h",
+      "line": 9,
+      "symbol": "UAInAppMessageDefaultPrepareAssetsDelegate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 64,
+      "symbol": "UAInAppMessageHeadingKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 65,
+      "symbol": "UAInAppMessageBackgroundColorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 66,
+      "symbol": "UAInAppMessagePlacementKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 67,
+      "symbol": "UAInAppMessageContentLayoutKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 68,
+      "symbol": "UAInAppMessageBorderRadiusKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 69,
+      "symbol": "UAInAppMessageButtonLayoutKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 70,
+      "symbol": "UAInAppMessageButtonsKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 71,
+      "symbol": "UAInAppMessageMediaKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 72,
+      "symbol": "UAInAppMessageURLKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 73,
+      "symbol": "UAInAppMessageDismissButtonColorKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 74,
+      "symbol": "UAInAppMessageFooterKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 75,
+      "symbol": "UAInAppMessageDurationKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 76,
+      "symbol": "UAInAppMessageModalAllowsFullScreenKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 77,
+      "symbol": "UAInAppMessageHTMLAllowsFullScreenKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 78,
+      "symbol": "UAInAppMessageHTMLHeightKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 79,
+      "symbol": "UAInAppMessageHTMLWidthKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 80,
+      "symbol": "UAInAppMessageHTMLAspectLockKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAInAppMessageDisplayContent.h",
+      "line": 81,
+      "symbol": "UAInAppMessageHTMLRequireConnectivityKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UALegacyInAppMessaging.h",
+      "line": 79,
+      "symbol": "UALegacyInAppMessaging.builderExtender",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

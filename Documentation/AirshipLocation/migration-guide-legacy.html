@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>migration-guide-legacy  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="migration-guide-legacy  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          AirshipLocation v14.3.1
+        </a>
+        
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/urbanairship/ios-library">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">AirshipLocation Reference</a>
+      <img class="carat" src="img/carat.png" />
+      migration-guide-legacy  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-10-11.html">migration-guide-10-11</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-11-12.html">migration-guide-11-12</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-12-13.html">migration-guide-12-13</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-13-14.html">migration-guide-13-14</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-132.html">migration-guide-13.2</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-9-10.html">migration-guide-9-10</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="migration-guide-legacy.html">migration-guide-legacy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALocation.html">UALocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALocationEvent.html">UALocationEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/UALocationInfo.html">UALocationInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/UALocationDelegate.html">UALocationDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:UALocationEvent.h@T@UALocationEventAnalyticsKey">UALocationEventAnalyticsKey</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='airship-ios-sdk-migration-guide-legacy' class='heading'>Airship iOS SDK Migration Guide (Legacy)</h1>
+<h1 id='urban-airship-library-8-x-to-9-0' class='heading'>Urban Airship Library 8.x to 9.0</h1>
+<h2 id='automation' class='heading'>Automation</h2>
+
+<p>UAAutomation has been generalized, and now works with UASchedule objects. Most of the methods have been renamed to reflect this:</p>
+
+<ul>
+<li><code>(void)scheduleActions:(UAActionScheduleInfo *)scheduleInfo completionHandler:(nullable void (^)(UAActionSchedule * __nullable))completionHandler</code> -&gt; <code>(void)scheduleActions:(UAActionScheduleInfo *)scheduleInfo completionHandler:(nullable void (^)(UASchedule * __nullable))completionHandler</code></li>
+<li><code>(void)cancelScheduleWithIdentifier:(NSString *)identifier</code> -&gt; <code>(void)cancelScheduleWithID:(NSString *)identifier</code></li>
+<li><code>(void)getScheduleWithIdentifier:(NSString *)identifier completionHandler:(void (^)(UAActionSchedule * __nullable))completionHandler</code> -&gt; <code>(void)getScheduleWithID:(NSString *)identifier completionHandler:(void (^)(UASchedule * __nullable))completionHandler</code></li>
+<li><code>(void)getSchedules:(void (^)(NSArray&lt;UAActionSchedule *&gt; *))completionHandler</code> -&gt; <code>(void)getSchedules:(void (^)(NSArray&lt;UASchedule *&gt; *))completionHandler</code></li>
+<li><code>(void)getSchedulesWithGroup:(NSString *)group completionHandler:(void (^)(NSArray&lt;UAActionSchedule *&gt; *))completionHandler</code> -&gt; <code>(void)getSchedulesWithGroup:(NSString *)group completionHandler:(void (^)(NSArray&lt;UASchedule *&gt; *))completionHandler</code></li>
+</ul>
+
+<p>UAScheduleDelay now supports multiple screens:</p>
+
+<ul>
+<li>const: <code>UAScheduleDelayScreenKey</code> -&gt; <code>UAScheduleDelayScreensKey</code></li>
+<li>property: <code>NSString *screen</code> -&gt; <code>NSArray *screens</code></li>
+</ul>
+<h2 id='in-app-messaging' class='heading'>In App Messaging</h2>
+
+<p>Urban Airship&rsquo;s banner-only In-App Messaging feature has been replaced with a more functional In-App Messaging feature that supports banner, modal and full screen messages. Please refer to <a href="https://docs.urbanairship.com/guides/ios-in-app-messaging/">In-App Messaging for iOS</a> for more information.</p>
+<h2 id='message-center' class='heading'>Message Center</h2>
+
+<p>UIWebView support has been removed from the UA Message Center. Other Message Center code has been renamed or removed. The changes are as follows:</p>
+<h3 id='renamed' class='heading'>Renamed</h3>
+<h4 id='classes' class='heading'>Classes</h4>
+
+<ul>
+<li>UADefaultMessageCenter* -&gt; UAMessageCenter*
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenter.html">UADefaultMessageCenter</a> -&gt; <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenter.html">UAMessageCenter</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterListCell.html">UADefaultMessageCenterListCell</a> -&gt; <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterListCell.html">UAMessageCenterListCell</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterListViewController.html">UADefaultMessageCenterListViewController</a> -&gt; <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterListViewController.html">UAMessageCenterListViewController</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterSplitViewController.html">UADefaultMessageCenterSplitViewController</a> -&gt; <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterSplitViewController.html">UAMessageCenterSplitViewController</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterStyle.html">UADefaultMessageCenterStyle</a> -&gt; <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterStyle.html">UAMessageCenterStyle</a></li>
+</ul></li>
+</ul>
+<h4 id='properties' class='heading'>Properties</h4>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAirship.html">UAirship</a>
+
+<ul>
+<li>defaultMessageCenter -&gt; messageCenter</li>
+</ul></li>
+</ul>
+<h3 id='removed' class='heading'>Removed</h3>
+<h4 id='classes' class='heading'>Classes</h4>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UALandingPageOverlayController.html">UALandingPageOverlayController</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAOverlayViewController.html">UAOverlayViewController</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterMessageViewController.html">UADefaultMessageCenterMessageViewController</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterMessageViewController.html">UAMessageCenterMessageViewController</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Protocols/UARichContentWindow.html">UARichContentWindow</a>, UAUIWebViewDelegate
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWKWebViewDelegate.html">UAWKWebViewDelegate</a></li>
+</ul></li>
+<li>UAWebViewDelegate
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWKWebViewNativeBridge.html">UAWKWebViewNativeBridge</a></li>
+</ul></li>
+</ul>
+<h4 id='methods-and-properties' class='heading'>Methods and Properties</h4>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAConfig.html">UAConfig</a>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UAConfig.html#/c:objc(cs)UAConfig(py)useWKWebView">useWKWebView</a>
+
+<ul>
+<li>No replacement. WKWebViews are now always used in inbox message and overlay views.</li>
+</ul></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenter.html">UAMessageCenter</a> (UADefaultMessageCenter)
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenter.html#/c:objc(cs)UADefaultMessageCenter(im)displayMessage:">displayMessage:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenter.html#/c:objc(cs)UAMessageCenter(im)displayMessageForID:">displayMessageForID:</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenter.html#/c:objc(cs)UADefaultMessageCenter(im)displayMessage:animated:">displayMessage:animated</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenter.html#/c:objc(cs)UAMessageCenter(im)displayMessageForID:animated:">displayMessageForID:animated:</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterListViewController.html">UAMessageCenterListViewController</a> (UADefaultMessageCenterListViewController)</li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterListViewController.html#/c:objc(cs)UAMessageCenterListViewController(im)displayMessage:">displayMessage:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterListViewController.html#/c:objc(cs)UAMessageCenterListViewController(im)displayMessageForID:">displayMessageForID:</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UADefaultMessageCenterListViewController.html#/c:objc(cs)UADefaultMessageCenterListViewController(im)displayMessage:onError:">displayMessage:onError:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAMessageCenterListViewController.html#/c:objc(cs)UAMessageCenterListViewController(im)displayMessageForID:onError:">displayMessageForID:onError:</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Categories/NSString(UAURLEncoding).html">NSString+UAURLEncoding</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Categories/NSString(UAURLEncoding).html#/c:objc(cs)NSString(im)urlDecodedStringWithEncoding:">urlDecodedStringWithEncoding:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Categories/NSString(UAURLEncoding).html#/c:objc(cs)NSString(im)urlDecodedString">urlDecodedString</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Categories/NSString(UAURLEncoding).html#/c:objc(cs)NSString(im)urlEncodedStringWithEncoding:">urlEncodedStringWithEncoding:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Categories/NSString(UAURLEncoding).html#/c:objc(cs)NSString(im)urlEncodedString">urlEncodedString</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWebViewCallData.html">UAWebViewCallData</a></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(cm)callDataForURL:webView:">callDataForURL:webView:</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(cm)callDataForURL:delegate:">callDataForURL:delegate</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(cm)callDataForURL:webView:message:">callDataForURL:webView:message</a>
+
+<ul>
+<li>Use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(cm)callDataForURL:delegate:message:">callDataForURL:delegate:message</a></li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(py)webView">webView</a>
+
+<ul>
+<li>No replacement</li>
+</ul></li>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Classes/UAWebViewCallData.html#/c:objc(cs)UAWebViewCallData(py)richContentWindow">richContentWindow</a>
+
+<ul>
+<li>No replacement</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id='other' class='heading'>Other</h3>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UAActionJSDelegate">UAActionJSDelegate</a>
+
+<ul>
+<li><a href="https://docs.urbanairship.com/reference/libraries/ios/8.6.0/Constants.html#/c:@UAActionMetadataWebViewKey">UAActionMetadataWebViewKey</a>
+
+<ul>
+<li>No replacement - no longer supported</li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id='urban-airship-library-8-x-to-8-3-0' class='heading'>Urban Airship Library 8.x to 8.3.0</h1>
+<h2 id='wkwebview-support' class='heading'>WKWebView Support</h2>
+
+<p>Version 8.3.0 adds support for iOS&rsquo;s <a href="https://developer.apple.com/reference/webkit/wkwebview">WKWebView</a>. UIWebView support for Urban Airship&rsquo;s default message center and overlay views will be removed in iOS SDK 9.0.</p>
+<h3 id='a-href-https-docs-urbanairship-com-reference-libraries-ios-latest-classes-uaconfig-html-c-objc-cs-uaconfig-py-usewkwebview-usewkwebview-a-key' class='heading'><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAConfig.html#/c:objc(cs)UAConfig(py)useWKWebView">useWKWebView</a> key</h3>
+
+<p>By including the &ldquo;useWKWebView&rdquo; key in AirshipConfig.plist and setting the value to &ldquo;YES&rdquo;, you can enable WKWebView support for messages in the default message center (<a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UADefaultMessageCenter.html">UADefaultMessageCenter</a>) and for landing pages (<a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UALandingPageOverlayController.html">UALandingPageOverlayController﻿</a>).</p>
+<h3 id='a-href-https-docs-urbanairship-com-reference-libraries-ios-latest-classes-uawkwebviewnativebridge-html-uawkwebviewnativebridge-a' class='heading'><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWKWebViewNativeBridge.html">UAWKWebViewNativeBridge</a></h3>
+
+<p>UAWKWebViewNativeBridge is the interface for integrating Urban Airship features into your own WKWebViews. Please see the <a href="https://docs.urbanairship.com/topic-guides/ios-message-center-customization.html">iOS Message Center Customization Topic Guide</a> or the <a href="https://docs.urbanairship.com/guides/custom-events/">Custom Events Guide</a> for more information</p>
+<h3 id='scaling-differences' class='heading'>Scaling differences</h3>
+
+<p>WKWebView by default scales the content to fit the view. This is different than UIWebView. The following is an example of the rendering of simple message center message with a body containing only an image tag: <code>&lt;img src=&quot;https://www.urbanairship.com/images/urban-airship-sidebyside-blue@2x.png&quot;&gt;</code></p>
+
+<table><thead>
+<tr>
+<th>WKWebView</th>
+<th>UIWebView</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><div style="text-align:center"><img src="images/wkwebview-simple-message.png" style="border:3px solid black"></div></td>
+<td><div style="text-align:center"><img src="images/uiwebview-simple-message.png" style="border:3px solid black"></div></td>
+</tr>
+</tbody></table>
+
+<p>Fully styled content, such as that contained in messages created in the <a href="https://docs.urbanairship.com/engage/rich-content-editor/">Rich Content Editor</a> of the Message Composer, will render identically using either type of web view.</p>
+<h2 id='application-integration' class='heading'>Application Integration</h2>
+
+<p>A new application integration point has been added to <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UAAppIntegration">UAAppIntegration</a>.
+If your application disables automatic integration, it will need to be updated to call
+the new method:</p>
+<h3 id='uiapplicationdelegate-method' class='heading'>UIApplicationDelegate method:</h3>
+<h4 id='swift' class='heading'>Swift</h4>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFailToRegisterForRemoteNotificationsWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span>
+</code></pre>
+<h4 id='objective-c' class='heading'>Objective-C</h4>
+<pre class="highlight plaintext"><code>+ (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
+</code></pre>
+<h1 id='urban-airship-library-7-3-0-to-8-0-0' class='heading'>Urban Airship Library 7.3.0 to 8.0.0</h1>
+
+<p>This version supports iOS 8, 9 and 10. Xcode 8 is required.</p>
+
+<p>With iOS 10 and SDK 8 you have the ability to send Rich Notifications. To configure rich notification support, please visit <a href="https://docs.urbanairship.com/platform/ios/#notification-service-extension">iOS Notification Service Extensions</a>.</p>
+<h2 id='application-integration' class='heading'>Application Integration</h2>
+
+<p>All application integration points have been moved to <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UAAppIntegration">UAAppIntegration</a>.
+If your application disables automatic integration, it will need to be updated to call
+the new methods:</p>
+<h3 id='uiapplicationdelegate-methods' class='heading'>UIApplicationDelegate methods:</h3>
+<h4 id='swift' class='heading'>Swift</h4>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">NSData</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">],</span> <span class="n">fetchCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(</span><span class="kt">UIBackgroundFetchResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterUserNotificationSettings</span> <span class="nv">notificationSettings</span><span class="p">:</span> <span class="kt">UIUserNotificationSettings</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">handleActionWithIdentifier</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">forRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">handleActionWithIdentifier</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">forRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">],</span> <span class="n">withResponseInfo</span> <span class="nv">responseInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+</code></pre>
+<h4 id='objective-c' class='heading'>Objective-C</h4>
+<pre class="highlight plaintext"><code>+ (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+
++ (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+
++ (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings;
+
++ (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo completionHandler:(void (^)())handler;
+
++ (void)application:(UIApplication *)application handleActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(nullable NSDictionary *)responseInfo completionHandler:(void (^)())handler;
+</code></pre>
+<h3 id='unusernotificationdelegate-methods' class='heading'>UNUserNotificationDelegate methods:</h3>
+<h4 id='swift' class='heading'>Swift</h4>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userNotificationCenter</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span><span class="p">,</span> <span class="n">didReceiveNotificationResponse</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">UNNotificationResponse</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">userNotificationCenter</span><span class="p">(</span><span class="nv">center</span><span class="p">:</span> <span class="kt">UNUserNotificationCenter</span><span class="p">,</span> <span class="n">willPresentNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(</span><span class="n">_</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+</code></pre>
+<h4 id='objective-c' class='heading'>Objective-C</h4>
+<pre class="highlight plaintext"><code>+ (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response
+         withCompletionHandler:(void(^)())completionHandler;
+
++ (void)userNotificationCenter:(UNUserNotificationCenter *)center
+       willPresentNotification:(UNNotification *)notification
+         withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler;
+</code></pre>
+<h2 id='uapush' class='heading'>UAPush</h2>
+
+<p>The property <code>launchNotification</code> has been replaced with <code>launchNotificationResponse</code>
+and will contain a <code>UANotificationResponse</code>.</p>
+
+<p>Notification categories and types have been removed. Instead you can set UANotificationOptions
+and UANotificationCategory and the SDK will automatically convert the properties to the
+appropriate types depending on the OS version.</p>
+<pre class="highlight swift"><code><span class="c1">// Old</span>
+<span class="kd">func</span> <span class="nf">currentEnabledNotificationTypes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UIUserNotificationType</span>
+<span class="k">var</span> <span class="nv">userNotificationTypes</span><span class="p">:</span> <span class="kt">UIUserNotificationType</span>
+<span class="k">var</span> <span class="nv">userNotificationCategories</span> <span class="o">=</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">NSObject</span><span class="o">&gt;</span><span class="p">()</span>
+
+<span class="c1">// New</span>
+<span class="k">var</span> <span class="nv">notificationOptions</span><span class="p">:</span> <span class="kt">UANotificationOptions</span>
+<span class="k">var</span> <span class="nv">authorizedNotificationOptions</span><span class="p">:</span> <span class="kt">UANotificationOptions</span>
+<span class="k">var</span> <span class="nv">customCategories</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">UANotificationCategory</span><span class="o">&gt;</span>
+</code></pre>
+<pre class="highlight plaintext"><code>// Old
+- (UIUserNotificationType)currentEnabledNotificationTypes;
+@property (nonatomic, assign) UIUserNotificationType userNotificationTypes;
+@property (nonatomic, strong) NSSet *userNotificationCategories;
+
+// New
+@property (nonatomic, assign) UANotificationOptions notificationOptions;
+@property (nonatomic, assign, readonly) UANotificationOptions authorizedNotificationOptions;
+@property (nonatomic, strong) NSSet &lt;UANotificationCategory *&gt;customCategories;
+</code></pre>
+<h2 id='uapushnotificationdelegate' class='heading'>UAPushNotificationDelegate</h2>
+
+<p>The UAPushNotificationDelegate has been rewritten to be more aligned with iOS 10.
+The following methods are provided:</p>
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">receivedForegroundNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notificationContent</span><span class="p">:</span> <span class="kt">UANotificationContent</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">receivedBackgroundNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notificationContent</span><span class="p">:</span> <span class="kt">UANotificationContent</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">(</span><span class="kt">UIBackgroundFetchResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">receivedNotificationResponse</span><span class="p">(</span><span class="n">_</span> <span class="nv">notificationResponse</span><span class="p">:</span> <span class="kt">UANotificationResponse</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span>
+<span class="kd">func</span> <span class="nf">presentationOptions</span><span class="p">(</span><span class="k">for</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationPresentationOptions</span>
+</code></pre>
+<pre class="highlight plaintext"><code>-(void)receivedForegroundNotification:(UANotificationContent *)notificationContent completionHandler:(void (^)())completionHandler;
+-(void)receivedBackgroundNotification:(UANotificationContent *)notificationContent completionHandler:(void (^)(UIBackgroundFetchResult))completionHandler;
+-(void)receivedNotificationResponse:(UANotificationResponse *)notificationResponse completionHandler:(void (^)())completionHandler;
+- (UNNotificationPresentationOptions)presentationOptionsForNotification:(UNNotification *)notification;
+</code></pre>
+<h2 id='uautils' class='heading'>UAUtils</h2>
+
+<p>The <code>isBackgroundPush</code> method has been replaced with <code>isSilentPush</code>.</p>
+<h1 id='urban-airship-library-7-2-x-to-7-3-0' class='heading'>Urban Airship Library 7.2.x to 7.3.0</h1>
+<h2 id='named-user' class='heading'>Named User</h2>
+
+<p><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UANamedUser">UANamedUser</a> access has been moved to <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UAirship">UAirship</a>.</p>
+
+<p>Added</p>
+<pre class="highlight swift"><code><span class="kt">UAirship</span><span class="o">.</span><span class="nf">namedUser</span><span class="p">()</span><span class="o">.</span><span class="n">identifier</span> <span class="o">=</span> <span class="s">"NamedUserID"</span>
+</code></pre>
+<pre class="highlight plaintext"><code>[UAirship namedUser].identifier = @"NamedUserID";
+</code></pre>
+
+<p>Deprecated</p>
+<pre class="highlight swift"><code><span class="kt">UAirship</span><span class="o">.</span><span class="nf">push</span><span class="p">()</span><span class="o">.</span><span class="n">namedUser</span><span class="o">.</span><span class="n">identifier</span> <span class="o">=</span> <span class="s">"NamedUserID"</span>
+</code></pre>
+<pre class="highlight plaintext"><code>[UAirship push].namedUser.identifier = @"NamedUserID";
+</code></pre>
+<h2 id='location-service' class='heading'>Location Service</h2>
+
+<p><a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UALocationService">UALocationService</a> and <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UALocationServiceDelegate">UALocationServiceDelegate</a> has been deprecated and
+replaced with <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UALocation">UALocation</a> and <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes.html#/c:objc(cs)UALocationDelegate">UALocationDelegate</a>. See <a href="https://docs.urbanairship.com/platform/ios#ios-location">iOS Platform Guide</a> on
+how to use the new location APIs.</p>
+<h1 id='urban-airship-library-7-0-0-to-7-2-x' class='heading'>Urban Airship Library 7.0.0 to 7.2.x</h1>
+<h2 id='wallet-action' class='heading'>Wallet Action</h2>
+
+<p>The Urban Airship library no longer references the Passkit framework for the wallet action.
+This is to work around the App Store incorrectly showing an app &ldquo;Supports Wallet&rdquo;
+when it does not contain wallet capabilities (Radar #24942020). The wallet action
+now behaves exactly like the open URL external action. If the old wallet action
+behavior is desired, please see <a href="https://github.com/urbanairship/ua-extensions/tree/master/AppleWallet">Apple Wallet extension</a>.</p>
+<h1 id='urban-airship-library-6-1-x-to-7-0-0' class='heading'>Urban Airship Library 6.1.x to 7.0.0</h1>
+
+<p>Anything deprecated in 6.x.x or older has been removed from the library in 7.0.0. This version also hides undocumented APIs.</p>
+<h2 id='package-changes' class='heading'>Package Changes</h2>
+
+<p>The AirshipResources bundle stores resources necessary for the Message Center and other Urban Airship library features. For details on integrating the
+AirshipResources bundle, see the <a href="https://docs.urbanairship.com/platform/ios#platform-ios">iOS Platform Guide</a>.</p>
+<h2 id='message-center' class='heading'>Message Center</h2>
+
+<p>Applications that make use of previous iterations of the Urban Airship Message Center will be required to implement the UAInboxDelegate. Implementing the UAInboxDelegate is necessary to ensure the correct Message Center is displayed upon message receipt. For more information regarding Message Center integration, see the <a href="https://docs.urbanairship.com/platform/ios#ios-rich-push">Message Center Integration Guide</a>.</p>
+<h1 id='urban-airship-library-6-0-x-to-6-1-x' class='heading'>Urban Airship Library 6.0.x to 6.1.x</h1>
+<h2 id='airshipkit' class='heading'>AirshipKit</h2>
+
+<p>Urban Airship 6.1 brings changes to the way the AirshipKit framework
+is distributed and embedded. Instead of shipping a pre-built universal
+binary, AirshipKit is now distributed as an Xcode project, which you
+can drag into your application so that the framework is built and
+embedded in your app at compile time. For detailed information on
+embedding AirshipKit, see the <a href="https://docs.urbanairship.com/platform/ios#sdk-installation">SDK setup instructions</a>.</p>
+<h2 id='uainboxpushhandlerdelegate' class='heading'>UAInboxPushHandlerDelegate</h2>
+
+<p>The UAInboxPushHandlerDelegate has been deprecated for the new, simplified delegate UAInboxDelegate. The UAInboxDelegate can be set directly on
+the inbox:</p>
+<pre class="highlight plaintext"><code>[UAirship inbox].delegate = self.inboxDelegate;
+</code></pre>
+
+<p>Once the inbox delegate is set, the UAInboxPushHandlerDelegate will no longer be called.</p>
+
+<p>The UAInboxDelegate is not a direct replacement for UAInboxPushHandlerDelegate. It only defines a subset of
+the methods that UAInboxPushHandlerDelegate defined. <code>showInboxMessage:</code> will be called instead of <code>launchRichPushMessageAvailable:</code>. Neither
+<code>applicationLaunchedWithRichPushNotification:</code> nor <code>richPushNotificationArrived:</code> have corresponding methods. Instead,
+look for a message ID in incoming notifications in the UAPushNotificationDelegate:</p>
+<pre class="highlight plaintext"><code>- (void)receivedForegroundNotification:(NSDictionary *)notification fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+
+    // Inbox message associated with the received notification
+    if ([UAInboxUtils inboxMessageIDFromNotification:notification]) {
+
+    }
+
+    completionHandler(UIBackgroundFetchResultNoData);
+}
+
+- (void)launchedFromNotification:(NSDictionary *)notification fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    // Inbox message associated with the received notification
+    if ([UAInboxUtils inboxMessageIDFromNotification:notification]) {
+
+    }
+
+    // Call the completion handler
+    completionHandler(UIBackgroundFetchResultNoData);
+}
+</code></pre>
+
+<p>The UAInboxDelegate only requires <code>showInbox</code> method, <code>richPushMessageAvailable:</code> and <code>showInboxMessage:</code> are optional.
+If both the  UAInboxPushHandlerDelegate and the UAInboxDelegate delegate are not set, or if UAInboxDelegate does not respond
+to <code>showInboxMessage:</code>, the message will be displayed in a landing page controller.</p>
+<h2 id='device-side-tags' class='heading'>Device-side Tags</h2>
+
+<blockquote>
+<p>The UAPush property <code>deviceTagsEnabled</code> has been deprecated and replaced
+with <code>channelTagRegistrationEnabled</code>.</p>
+</blockquote>
+<h1 id='urban-airship-library-5-1-x-to-6-0-x' class='heading'>Urban Airship Library 5.1.x to 6.0.x</h1>
+
+<p>Anything deprecated in 5.x.x or older has been removed from the library in 6.0.0.</p>
+<h2 id='disabling-user-notifications' class='heading'>Disabling User Notifications</h2>
+
+<!-- start_ios-disabling-user-notifications -->
+
+<p>By default, user push notifications may now only be enabled from within applications running
+on iOS 8+. Once user notifications are enabled and a user has been prompted for permission,
+the setting may not be changed from within the app. We now recommend that applications
+running on iOS 8 link directly to the system push settings for the application with the
+<code>UIApplicationOpenSettingsURLString</code> constant.</p>
+<pre class="highlight plaintext"><code>// Launch directly to your applications settings in Settings.app
+[[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+</code></pre>
+
+<!-- end_ios-disabling-user-notifications -->
+
+<p>A few changes were made to <code>UAPush</code> to support this. A new property,
+<code>requireSettingsAppToDisableUserNotifications</code> (defaulting to <code>YES</code>), is used
+to determine whether or not to allow <code>userPushNotificationsEnabled</code> to change from <code>YES</code>
+to <code>NO</code>. Its companion property, <code>allowUnregisteringUserNotificationTypes</code> now defaults to <code>YES</code>,
+which will allow the application to disable user notifications at the iOS level to keep
+the application settings  in sync with the iOS settings screen.</p>
+<h2 id='singleton-accessors' class='heading'>Singleton Accessors</h2>
+
+<p>All of the singleton accessors, except for <code>[UAirship shared]</code> have been deprecated. New accessors
+are available through class methods or properties off of <code>UAirship</code>. Any accessor will now return
+nil instead of an uninitialized object until takeOff is called.</p>
+
+<p>Changes:</p>
+
+<ul>
+<li><p><code>[UAPush shared]</code> moved to <code>[UAirship push]</code></p></li>
+<li><p><code>[UAInbox shared]</code> moved to <code>[UAirship inbox]</code></p></li>
+<li><p><code>[UAUser defaultUser]</code> moved to <code>[UAirship inboxUser]</code></p></li>
+<li><p><code>[UAActionRegistry shared]</code> moved to <code>[UAirship shared].actionRegistry</code></p></li>
+</ul>
+<h2 id='uairship' class='heading'>UAirship</h2>
+
+<p>The device token access has been removed. Instead, use <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAirship.html#/c:objc(cs)UAirship(py)deviceToken">UAirship deviceToken</a>.</p>
+
+<p>Removed</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, readonly) NSString *deviceToken;
+</code></pre>
+<h2 id='uaaction' class='heading'>UAAction</h2>
+
+<p>The <code>performWithArguments:actionName:completionHandler:</code> method has been deprecated and replaced
+by <code>performWithArguments:completionHandler:</code>. If the action was triggered by name from the action
+registry, the name of the action can be found in the ActionArguments&rsquo; metadata under the key
+<code>UAActionMetadataRegisteredName</code>.</p>
+
+<p>Example:</p>
+<pre class="highlight plaintext"><code>- (void)performWithArguments:(UAActionArguments *)arguments withCompletionHandler:(UAActionCompletionHandler)completionHandler {
+    NSString *actionName = arguments.metadata[UAActionMetadataRegisteredName];
+}
+</code></pre>
+
+<p>Added</p>
+<pre class="highlight plaintext"><code>- (void)performWithArguments:(UAActionArguments *)arguments completionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+
+<p>Deprecated</p>
+<pre class="highlight plaintext"><code>- (void)performWithArguments:(UAActionArguments *)arguments actionName:(NSString *)name completionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+<h2 id='uaactionrunner' class='heading'>UAActionRunner</h2>
+
+<p>The action runner no longer accepts <code>UAActionArguments</code>, instead it accepts the argument&rsquo;s situation, metadata, and value.
+The action arguments will then be constructed internally and passed to the action.</p>
+
+<p>Added</p>
+<pre class="highlight plaintext"><code>+ (void)runActionWithName:(NSString *)actionName
+                    value:(id)value
+                situation:(UASituation)situation;
+
++ (void)runActionWithName:(NSString *)actionName
+                    value:(id)value
+                situation:(UASituation)situation
+                 metadata:(NSDictionary *)metadata;
+
++ (void)runActionWithName:(NSString *)actionName
+                    value:(id)value
+                situation:(UASituation)situation
+        completionHandler:(UAActionCompletionHandler)completionHandler;
+
++ (void)runActionWithName:(NSString *)actionName
+                value:(id)value
+            situation:(UASituation)situation
+             metadata:(NSDictionary *)metadata
+    completionHandler:(UAActionCompletionHandler)completionHandler;
+
++ (void)runAction:(UAAction *)action
+            value:(id)value
+        situation:(UASituation)situation;
+
++ (void)runAction:(UAAction *)action
+            value:(id)value
+        situation:(UASituation)situation
+         metadata:(NSDictionary *)metadata;
+
++ (void)runAction:(UAAction *)action
+            value:(id)value
+        situation:(UASituation)situation
+completionHandler:(UAActionCompletionHandler)completionHandler;
+
++ (void)runAction:(UAAction *)action
+            value:(id)value
+        situation:(UASituation)situation
+         metadata:(NSDictionary *)metadata
+completionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+
+<p>Removed</p>
+<pre class="highlight plaintext"><code>+ (void)runActionWithName:(NSString *)actionName
+                withArguments:(UAActionArguments *)arguments
+        withCompletionHandler:(UAActionCompletionHandler)completionHandler;
+
++ (void)runAction:(UAAction *)action
+    withArguments:(UAActionArguments *)arguments
+withCompletionHandler:(UAActionCompletionHandler)completionHandler;
+
++ (void)runActions:(NSDictionary *)actions
+ withCompletionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+<h2 id='uaactionarguments' class='heading'>UAActionArguments</h2>
+
+<p><code>UASituationForegoundInteractiveButton</code> has been deprecated and replaced with <code>UASituationForegroundInteractiveButton</code>.</p>
+<h2 id='uainboxpushhandlerdelegate' class='heading'>UAInboxPushHandlerDelegate</h2>
+
+<p>Two required methods have been added - <code>showInbox</code> and <code>showInboxMessage:</code>. These methods are needed
+to allow the SDK to directly link to the inbox or an inbox message.</p>
+
+<p>Added</p>
+<pre class="highlight plaintext"><code>- (void)showInbox;
+- (void)showInboxMessage:(UAInboxMessage *)inboxMessage;
+</code></pre>
+<h2 id='uainboxutils' class='heading'>UAInboxUtils</h2>
+
+<p>The methods <code>getRichPushMessageIDFromNotification:</code> and <code>getRichPushMessageIDFromValue:</code> have been renamed to
+<code>inboxMessageIDFromNotification:</code> and <code>inboxMessageIDFromValue</code>.</p>
+
+<p>Added</p>
+<pre class="highlight plaintext"><code>+ (NSString *)inboxMessageIDFromNotification:(NSDictionary *)notification;
++ (NSString *)inboxMessageIDFromValue:(id)values;
+</code></pre>
+
+<p>Removed</p>
+<pre class="highlight plaintext"><code>+ (NSString *)getRichPushMessageIDFromNotification:(NSDictionary *)notification;
++ (NSString *)getRichPushMessageIDFromValue:(id)richPushValues;
+</code></pre>
+<h2 id='normalized-naming' class='heading'>Normalized naming</h2>
+
+<p>Updated the library with normalized naming of <code>Id</code> and <code>id</code> to <code>ID</code>.</p>
+<h1 id='urban-airship-library-5-0-x-to-5-1-x' class='heading'>Urban Airship Library 5.0.x to 5.1.x</h1>
+<h2 id='whitelisting' class='heading'>Whitelisting</h2>
+
+<p>Added whitelisting to Urban Airship JavaScript interface injection into custom webview implementations. Urban Airship URLs are automatically whitelisted, but if the UA JavaScript bridge is used outside of Urban Airship hosted Rich Application Pages, the hosting URLs need to be whitelisted.</p>
+
+<p>Whitelist rules can be defined in the AirshipConfig.plist file by defining an array of rules, or directly on the whitelist instance after <code>takeOff</code>:</p>
+<pre class="highlight plaintext"><code>[[UAirship shared].whitelist addEntry:@"https://urbanairship.com"];
+</code></pre>
+
+<p>See <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAWhitelist.html">Whitelist</a> for more details on creating valid URL patterns.</p>
+<h2 id='urban-airship-javascript-interface' class='heading'>Urban Airship JavaScript Interface</h2>
+
+<p>In order to use the Urban Airship JavaScript interface on a custom webview implementation, you must use the new UAWebViewDelegate. Previous methods of injecting the Urban Airship JavaScript are now deprecated.</p>
+
+<p>The UAWebViewDelegate can be subclassed, called through to by other UIWebViewDelegates, or it can forward all UIWebViewDelegate messages to a different delegate by assigning the <code>forwardDelegate</code> on the UAWebViewDelegate instance.</p>
+
+<p>The <code>UAWebViewTools</code> interface has been deprecated in 5.1.0 and replaced with custom webview implementations using the <code>UAWebViewDelegate</code> class:</p>
+<pre class="highlight plaintext"><code>@interface UAWebViewTools : NSObject
+</code></pre>
+
+<p>The following <code>UIWebView+UAAdditions</code> methods have been deprecated in 5.1.0:</p>
+<pre class="highlight plaintext"><code>- (void)populateJavascriptEnvironment:(UAInboxMessage *)message
+- (void)populateJavascriptEnvironment
+- (void)fireUALibraryReadyEvent
+</code></pre>
+
+<p>The following <code>UIWebView+UAAdditions</code> method has been added in 5.1.0:</p>
+<pre class="highlight plaintext"><code>- (void)injectInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation;
+</code></pre>
+
+<p>The <code>UAWebViewDelegate</code> interface and its properties have been added in 5.1.0:</p>
+<pre class="highlight plaintext"><code>@interface UAWebViewDelegate : NSObject &lt;UIWebViewDelegate&gt;
+@property (nonatomic, weak) id &lt;UIWebViewDelegate&gt; forwardDelegate;
+@property (nonatomic, weak) id &lt;UARichContentWindow&gt; richContentWindow;
+</code></pre>
+
+<p>The <code>closeWindow</code> method in <code>UARichContentWindow</code> has been deprecated in 5.1.0 and replaced with <code>closeWebView:animated:</code>.</p>
+
+<p>Deprecated in 5.1.0:</p>
+<pre class="highlight plaintext"><code>- (void)closeWindow:(BOOL)animated;
+</code></pre>
+
+<p>Added in 5.1.0:</p>
+<pre class="highlight plaintext"><code>- (void)closeWebView:(UIWebView *)webView animated:(BOOL)animated;
+</code></pre>
+<h1 id='urban-airship-library-4-x-to-5-0-0' class='heading'>Urban Airship Library 4.x to 5.0.0</h1>
+
+<p>This version supports iOS 6, 7 and 8. Xcode 6 is required for all projects and the static library.</p>
+<h2 id='uapush-changes' class='heading'>UAPush Changes</h2>
+
+<p>UAPush has significantly changed to support iOS 8.</p>
+<h3 id='registration-changes' class='heading'>Registration Changes</h3>
+
+<p>The <code>pushEnabled</code> property has been removed and replaced with <code>userPushNotificationsEnabled</code>
+The default value for <code>userPushNotificationsEnabled</code> is <code>NO</code> and can be set
+with <code>userPushNotificationsEnabledByDefault</code>.</p>
+
+<p>The <code>[UAPush delegate]</code> property deprecated in 3.0.0 has been removed and replaced with
+<code>[UAPush pushNotificationDelegate]</code>.</p>
+
+<p>The <code>addTagToCurrentDevice</code>, <code>addTagsToCurrentDevice</code>, <code>removeTagFromCurrentDevice</code>
+and <code>removeTagsFromCurrentDevice</code> methods have been deprecated and replaced with
+<code>addTag</code>, <code>addTags</code>, <code>removeTag</code> and <code>removeTags</code> methods, respectively.</p>
+
+<p>The <code>registerForRemoteNotificationTypes</code> and <code>registerForRemoteNotifications</code>
+methods have been removed, so the <code>updateRegistration</code> method should be called
+instead. The <code>UIRemoteNotificationType notificationTypes</code> property has been
+deprecated and replaced with <code>UIUserNotificationType userNotificationTypes</code>.</p>
+
+<p>The <code>currentEnabledNotificationTypes</code> method has been changed from a class
+method to an instance method and now returns a <code>UIUserNotificationType</code> enum.</p>
+
+<p>The <code>setQuietTimeFrom:to:withTimeZone:</code> method deprecated in 3.2.0 has been
+removed and replaced with <code>setQuietTimeStartHour:startMinute:endHour:endMinute:</code>.</p>
+
+<p>The <code>backgroundPushNotificationsEnabled</code> property has been added to enable/disable
+background remote notifications on the device through Urban Airship. The default
+value for <code>backgroundPushNotificationsEnabled</code> is <code>YES</code> and can be set with
+<code>backgroundPushNotificationsEnabledByDefault</code>.</p>
+
+<p>Removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic) BOOL pushEnabled;
+@property (nonatomic, weak) id&lt;UAPushNotificationDelegate&gt; delegate;
+
+- (void)registerForRemoteNotificationTypes:(UIRemoteNotificationType)types;
+- (void)registerForRemoteNotifications;
+- (void)setQuietTimeFrom:(NSDate *)from to:(NSDate *)to withTimeZone:(NSTimeZone *)tz;
+</code></pre>
+
+<p>Deprecated in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) UIRemoteNotificationType notificationTypes;
+
+- (void)addTagToCurrentDevice:(NSString *)tag
+- (void)addTagsToCurrentDevice:(NSArray *)tags
+- (void)removeTagFromCurrentDevice:(NSString *)tag
+- (void)removeTagsFromCurrentDevice:(NSArray *)tags
+</code></pre>
+
+<p>Added in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) UIUserNotificationType userNotificationTypes;
+@property (nonatomic, assign) BOOL userPushNotificationsEnabled;
+@property (nonatomic, assign) BOOL userPushNotificationsEnabledByDefault;
+@property (nonatomic, assign) BOOL backgroundPushNotificationsEnabled;
+@property (nonatomic, assign) BOOL backgroundPushNotificationsEnabledByDefault;
+@property (nonatomic, strong) NSSet *userNotificationCategories;
+@property (nonatomic, assign) BOOL requireAuthorizationForDefaultCategories;
+
+- (void)addTag:(NSString *)tag;
+- (void)addTags:(NSArray *)tags;
+- (void)removeTag:(NSString *)tag;
+- (void)removeTags:(NSArray *)tags;
+</code></pre>
+<h3 id='app-delegate-changes' class='heading'>App Delegate Changes</h3>
+
+<p>If automatic integration is enabled, then no changes are needed and this section
+can be ignored.</p>
+
+<p>The <code>registerDeviceToken</code> method as been removed and replaced with
+<code>appRegisteredForRemoteNotificationsWithDeviceToken</code>.</p>
+
+<p>The <code>handleNotification</code> methods have been removed and replaced with the
+<code>appReceivedRemoteNotification</code> methods.</p>
+
+<p>Removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (void)registerDeviceToken:(NSData *)token;
+- (void)handleNotification:(NSDictionary *)notification applicationState:(UIApplicationState)state;
+- (void)handleNotification:(NSDictionary *)notification
+          applicationState:(UIApplicationState)state
+    fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler;
+</code></pre>
+
+<p>Added 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (void)appRegisteredForRemoteNotificationsWithDeviceToken:(NSData *)token;
+- (void)appReceivedRemoteNotification:(NSDictionary *)notification
+                     applicationState:(UIApplicationState)state;
+- (void)appReceivedRemoteNotification:(NSDictionary *)notification
+                     applicationState:(UIApplicationState)state
+               fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler;
+- (void)appReceivedActionWithIdentifier:(NSString *)identifier
+                           notification:(NSDictionary *)notification
+                       applicationState:(UIApplicationState)state
+                      completionHandler:(void (^)())completionHandler;
+</code></pre>
+<h2 id='uaconfig-changes' class='heading'>UAConfig Changes</h2>
+
+<p>The <code>clearKeychain</code> property has been deprecated as of version 5.0.0. To clear the
+keychain once during the next application start, use the settings bundle to set
+<code>YES</code> for the key <code>com.urbanairship.reset_keychain</code> in standard user defaults.</p>
+
+<p>Property deprecated:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) BOOL clearKeychain;
+</code></pre>
+<h2 id='uaobservable-changes' class='heading'>UAObservable Changes</h2>
+
+<p>The <code>UAObservable</code> interface and all related protocols/methods deprecated in
+version 3.0.0 has been removed. They have been replaced with three categories:
+block-based methods, delegate-based methods, and NSNotificationCenter events.</p>
+
+<p>Interface removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@interface UAObservable : NSObject;
+</code></pre>
+<h2 id='ualocationservice-changes' class='heading'>UALocationService Changes</h2>
+
+<p>A <code>requestAlwaysAuthorization</code> property has been added as of version 5.0.0. This property
+allows the location prompt authorization type to be selected. When <code>requestAlwaysAuthorization</code>
+is set to YES - users will be prompted to grant continuous background authorization.
+When <code>requestAlwaysAuthorization</code> is set to NO - users will be prompted to grant &lsquo;when in
+use&rsquo; authorization. The <code>requestAlwaysAuthorization</code> property is set to YES by default
+because continuous background authorization is required for some UALocationService features.
+Care must be taken in selecting the correct authorization type, as the authorization prompt
+will only display once per app update.</p>
+
+<p>NSLocationAlwaysUsageDescription and NSLocationWhenInUseUsageDescription must be defined
+in the app&rsquo;s info.plist for authorization prompts to display.</p>
+
+<p>Property added:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) BOOL requestAlwaysAuthorization;
+</code></pre>
+<h2 id='localization-changes' class='heading'>Localization Changes</h2>
+
+<p>As of version 5.0.0, the <code>UAPushLocalization.bundle</code> and
+<code>UAInboxLocalization.bundle</code> files have been removed. In their place,
+the Push and Rich Push sample UI now search for localized strings in
+the main bundle, in tables named <code>UAPushUI.strings</code> and
+<code>UAInboxUI.strings</code> respectively. These are located in the
+directories <code>Airship/UI/Default/Push/Resources</code> and
+<code>Airship/UI/Default/Inbox/Resources</code>.</p>
+
+<p>Consequently, the <code>UA_PU_TR</code> and <code>UA_Inbox_TR</code> macros, previously
+used by the sample UI, have been modified and renamed. Instead, use
+the new <code>UAPushLocalizedString</code> and <code>UAInboxLocalizedString</code>
+macros, defined in the headers <code>UAInboxLocalization.h</code> and
+<code>UAPushLocalization.h</code>, respectively. These headers are found in the
+directories <code>Airship/UI/Default/Push/Classes</code> and
+<code>Airship/UI/Default/Inbox/Classes</code>.</p>
+<h2 id='push-ui-changes' class='heading'>Push UI Changes</h2>
+
+<p>The <code>UAPushUIProtocol</code> has been removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@protocol UAPushUIProtocol
++ (void)openApnsSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeApnsSettingsAnimated:(BOOL)animated;
++ (void)openTokenSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeTokenSettingsAnimated:(BOOL)animated;
+</code></pre>
+
+<p>Consequently, similar methods corresponding to this protocol in <code>UAPush</code> have also been
+removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>+ (void)useCustomUI:(Class)customUIClass;
++ (void)openApnsSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeApnsSettingsAnimated:(BOOL)animated;
++ (void)openTokenSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeTokenSettingsAnimated:(BOOL)animated;
+</code></pre>
+
+<p>In place of <code>UAPushUIProtocol</code>, your app should simply create and display UI class
+instances directly, in response to user interaction. For instance, if your app is
+using the sample UI classes distributed with the library, the classes corresponding
+to the APNS and Token settings are <code>UAPushSettingsViewController</code> and
+<code>UAPushMoreSettingsViewController</code>, respectively. For a simple example implementation,
+see the PushSample project distributed with the library.</p>
+<h2 id='uaaction-changes' class='heading'>UAAction Changes</h2>
+
+<p>The <code>performWithArguments</code> method has been modified in 5.0.0 to require an actionName <code>(NSString *)</code> value.</p>
+
+<p>The following method has been removed as of 5.0.0 and replaced with <code>performWithArguments:actionName:completionHandler:</code>:</p>
+<pre class="highlight plaintext"><code>- (void)performWithArguments:(UAActionArguments *)arguments withCompletionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+
+<p>Added method in 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (void)performWithArguments:(UAActionArguments *)arguments
+                  actionName:(NSString *)name
+           completionHandler:(UAActionCompletionHandler)completionHandler;
+</code></pre>
+<h2 id='inbox-ui-changes' class='heading'>Inbox UI Changes</h2>
+
+<p>The <code>UAInboxUIProtocol</code> has been removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@protocol UAInboxUIProtocol
++ (void)quitInbox;
++ (void)displayInboxInViewController:(UIViewController *)parentViewController animated:(BOOL)animated;
++ (void)displayMessageWithID:(NSString *)messageID inViewController:(UIViewController *)parentViewController;
+</code></pre>
+
+<p>As with the the <code>UAPushUIProtocol</code> removal discussed above, related methods have
+also been removed from <code>UAInbox</code>:</p>
+<pre class="highlight plaintext"><code>- (Class)uiClass;
++ (void)useCustomUI:(Class)customUIClass;
++ (void)quitInbox;
++ (void)displayInboxInViewController:(UIViewController *)parentViewController animated:(BOOL)animated;
++ (void)displayMessageWithID:(NSString *)messageID inViewController:(UIViewController *)parentViewController;
+</code></pre>
+
+<p>Additionally, in the sample UI, the classes <code>UAInboxUI</code> and <code>UAInboxNavUI</code> have
+also been removed, as they primarily served as reference implementation of the above
+protocol. As these classes also implemented the <code>UAInboxPushHandlerDelegate</code>
+protocol, apps using the sample UI more or less unchanged will need to implement
+<code>UAInboxPushHandlerDelegate</code> elsewhere, such as the app delegate or primary
+view controller.</p>
+
+<p>In place of the <code>UAInboxUI</code> protocol, your app should instead instantiate and display
+instances of the appropriate UI classes directly. In practice, these changes result in code
+that is much easier to follow than the previous arrangement, due to a reduction in
+circularity and a better separation of concerns.</p>
+
+<p>For instance, if your app is using the supplied sample UI classes distributed with
+the library, displaying the inbox in a modal view controller is as straightfoward
+as configuring an instance of <code>UAInboxMessageListController</code>, setting it as the root
+of a <code>UINavigationController</code> instance, and then calling the
+<code>presentViewController:animated</code> method on the desired parent view controller.</p>
+
+<p>As before, see the supplied <code>RichPushSample</code> app for a basic implementation that
+demonstrates multiple user interface approaches with modal display, navigation
+controller embedding, and a popover interface for iPad.</p>
+<h2 id='uainboxmessagelist-changes' class='heading'>UAInboxMessageList Changes</h2>
+
+<p>The <code>UAInboxMessageListDelegate</code> protocol has been deprecated as of 5.0.0. Use
+the block based message list callbacks instead.</p>
+<pre class="highlight plaintext"><code>@protocol UAInboxMessageListDelegate &lt;NSObject&gt;
+</code></pre>
+
+<p>The UAInboxMessageList shared singleton accessor deprecated in 3.1.0 has been
+removed and replaced with <code>[UAInbox shared].messageList</code>:</p>
+<pre class="highlight plaintext"><code>+ (UAInboxMessageList *)shared;
+</code></pre>
+
+<p>The following methods deprecated in 3.0.0 has been removed:</p>
+<pre class="highlight plaintext"><code>- (void)retrieveMessageList;
+- (void)performBatchUpdateCommand:(UABatchUpdateCommand)command withMessageIndexSet:(NSIndexSet *)messageIndexSet;
+</code></pre>
+
+<p>The following have been deprecated as of 5.0.0:</p>
+<pre class="highlight plaintext"><code>typedef NS_ENUM(NSInteger, UABatchUpdateCommand);
+- (UAInboxMessage*)messageAtIndex:(NSUInteger)index;
+- (NSUInteger)indexOfMessage:(UAInboxMessage *)message;
+</code></pre>
+
+<p>The <code>retrieveMessageListWithDelegate</code> method has been deprecated as of 5.0.0
+and replaced with <code>retrieveMessageListWithSuccessBlock:withFailureBlock:</code>:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)retrieveMessageListWithDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+</code></pre>
+
+<p>The following methods have been deprecated as of 5.0.0 and replaced with
+<code>markMessagesRead:completionHandler:</code> or <code>markMessagesDeleted:completionHandler:</code>:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)performBatchUpdateCommand:(UABatchUpdateCommand)command
+                        withMessageIndexSet:(NSIndexSet *)messageIndexSet
+                           withSuccessBlock:(UAInboxMessageListCallbackBlock)successBlock
+                           withFailureBlock:(UAInboxMessageListCallbackBlock)failureBlock;
+
+- (UADisposable *)performBatchUpdateCommand:(UABatchUpdateCommand)command
+                        withMessageIndexSet:(NSIndexSet *)messageIndexSet
+                               withDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+</code></pre>
+
+<p>Added methods in 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)markMessagesRead:(NSArray *)messages
+                 completionHandler:(UAInboxMessageListCallbackBlock)completionHandler;
+
+- (UADisposable *)markMessagesDeleted:(NSArray *)messages
+                    completionHandler:(UAInboxMessageListCallbackBlock)completionHandler;
+</code></pre>
+<h2 id='uainboxmessage-changes' class='heading'>UAInboxMessage Changes</h2>
+
+<p>The <code>markAsRead</code> method deprecated in 3.0.0 has been removed:</p>
+<pre class="highlight plaintext"><code>- (BOOL)markAsRead;
+</code></pre>
+
+<p>The following methods has been deprecated and replaced with <code>markMessageReadWithCompletionHandler</code> in 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)markAsReadWithSuccessBlock:(UAInboxMessageCallbackBlock)successBlock
+                            withFailureBlock:(UAInboxMessageCallbackBlock)failureBlock;
+
+- (UADisposable *)markAsReadWithDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+</code></pre>
+
+<p>Method added in 5.0.0:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)markMessageReadWithCompletionHandler:(UAInboxMessageCallbackBlock)completionHandler;
+</code></pre>
+<h2 id='uainboxmessagelistobserver-changes' class='heading'>UAInboxMessageListObserver Changes</h2>
+
+<p>The <code>UAInboxMessageListObserver</code> functionality deprecated in 3.0.0 has been
+replaced with the callback-based methods discussed above, as well as
+<code>NSNotificationCenter</code> events.</p>
+
+<p>Protocol removed in 5.0.0:</p>
+<pre class="highlight plaintext"><code>@protocol UAInboxMessageListObserver &lt;NSObject&gt;
+</code></pre>
+<h1 id='urban-airship-library-3-0-0-to-4-0-0' class='heading'>Urban Airship Library 3.0.0 to 4.0.0</h1>
+<h2 id='uapush-changes' class='heading'>UAPush Changes</h2>
+
+<p>This release added the ability to address opted out devices through channels.</p>
+
+<p>The Channel Identifier is an Urban Airship generated ID that maps to platform push addresses.
+The Channel ID is available from UAPush.</p>
+
+<p>Example:</p>
+<pre class="highlight plaintext"><code>NSString *channelID = [UAPush shared].channelID;
+</code></pre>
+
+<p>The channel ID will not be assigned in these conditions:</p>
+
+<ul>
+<li><p>When the device does not have an internet connection.</p></li>
+<li><p>When the server returns a 501 status code (Channel API not available), we will fall back to registering with the device token.</p></li>
+</ul>
+<h2 id='uaregistrationobserver' class='heading'>UARegistrationObserver</h2>
+
+<p>The UARegistrationObserver deprecated in version 3.0.0 has been removed.</p>
+<h2 id='uaregistrationdelegate' class='heading'>UARegistrationDelegate</h2>
+
+<p>The UARegistrationDelegate for registration events has changed to the following:</p>
+
+<p>Called when the device channel and/or device token successfully registers with Urban Airship.
+Successful registrations could be disabling push, enabling push, or updating the device registration settings.
+A nil channel id indicates the channel creation failed and the old device token registration is being used.
+The device token will only be available once the application successfully registers with APNS.</p>
+<pre class="highlight plaintext"><code>- (void)registrationSucceededForChannelID:(NSString *)channelID deviceToken:(NSString *)deviceToken
+</code></pre>
+
+<p>Called when the device channel and/or device token failed to register with Urban Airship.</p>
+<pre class="highlight plaintext"><code>- (void)registrationFailed
+</code></pre>
+
+<p>Implement the <code>UARegistrationDelegate</code> protocol and assign to the <code>[UAPush registrationDelegate]</code> to receive registration success and failure callbacks.</p>
+
+<p>Example:</p>
+<pre class="highlight plaintext"><code>[UAPush shared].registrationDelegate = yourUARegistrationDelegate;
+</code></pre>
+<h2 id='uainboxpushhandler-changes' class='heading'>UAInboxPushHandler Changes</h2>
+
+<p>Informing the <code>UAInboxPushHandler</code> about notifications is no longer necessary and <code>handleNotification:</code> has been removed.  This is now handled in <code>UAPush handleNotification:applicationState:</code> and in <code>UAPush handleNotification:applicationState:fetchCompletionHandler:</code>.</p>
+
+<p>Methods Removed:</p>
+<pre class="highlight plaintext"><code>+ (void)handleNotification:(NSDictionary *)userInfo;
+</code></pre>
+<h2 id='custom-inbox-ui' class='heading'>Custom Inbox UI</h2>
+
+<p>In order for custom Inbox UI classes to be compatible with the Actions Framework, a few changes must be made.</p>
+
+<p>The <code>UIWebViewDelegate</code> method <code>webView:shouldStartLoadWithRequest:navigationType</code> should call through to the method of the same name on the new <a href="https://docs.urbanairship.com/ios-lib/Classes/UAWebViewTools.html">UAWebViewTools</a> class.</p>
+
+<p>The category extension <code>UIWebView+UAAdditions</code> has been moved to the
+main library. Any app-level copies of this category should be removed.
+The category method <code>injectViewPortFix</code> is no longer necessary and
+has been removed.</p>
+
+<p>Inbox UI classes can now optionally implement the new <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Protocols.html#/c:objc(pl)UARichContentWindow">UARichContentWindow</a> protocol, which provides support for closing windows from JavaScript. Proper behavior of the new <code>UAirship.close</code> JavaScript method depends on this protocol, and individual implementations are responsible for determining how best to handle this event.</p>
+
+<p>Additionally, a new JavaScript event has been added allowing rich content pages to detect when the webView has finished loading, named <code>ualibraryready</code>. In order to support this event in your custom Inbox UI, make sure to call the following method in your <code>UIWebViewDelegate</code>&lsquo;s <code>webViewDidFinishLoad:</code> callback:</p>
+<pre class="highlight plaintext"><code>[self.webView fireUALibraryReadyEvent];
+</code></pre>
+
+<p>If ever in doubt, refer to the updated sample UI classes for an example implementation of these changes.</p>
+<h2 id='uainboxjavascriptdelegate' class='heading'>UAInboxJavaScriptDelegate</h2>
+
+<p>This protocol has been deprecated in favor of <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Protocols.html#/c:objc(pl)UAJavaScriptDelegate">UAJavaScriptDelegate</a>. New applications bridging JavaScript to native code are encouraged to use the Actions Framework, which depends on an internal implementation of this protocol, or use the new user-asignable <a href="https://docs.urbanairship.com/reference/libraries/ios/latest/Classes/UAirship.html#/c:objc(cs)UAirship(py)jsDelegate">UAirship jsDelegate</a> property on for custom implementations.</p>
+
+<p><code>UAInboxJavaScriptDelegate</code> implementations will continue to work in deprecation. Implementations of the new protocol are required to use the <code>uairship://</code> URL scheme as opposed to the deprecated <code>ua://</code> scheme.</p>
+
+<p>Support for these deprecated features will be removed after <strong>October 2, 2014</strong>.</p>
+<h1 id='urban-airship-library-2-1-0-to-3-0-0' class='heading'>Urban Airship Library 2.1.0 to 3.0.0</h1>
+
+<p>This version supports iOS 5, 6, 7 and iOS 7 <a href="https://docs.urbanairship.com/platform/ios#background-push">Background Push</a>.</p>
+<h2 id='linker-flags' class='heading'>Linker Flags</h2>
+
+<p>Starting with 3.x, the library makes use of Objective-C categories.  To support categories and prevent &ldquo;selector not recognized&rdquo; runtime exceptions, add the linker flag &ldquo;-ObjC&rdquo; for &ldquo;Other Linker Flags&rdquo; in your projects Build settings.</p>
+<h2 id='arc-changes' class='heading'>ARC Changes</h2>
+
+<p>The library now uses Automatic Reference Counting (ARC), so no extra work is
+needed if your project is ARC enabled.</p>
+
+<p>For non-ARC projects, compiler flags can be used to set individual source files
+to compile as ARC.  Select the target in Xcode, go to the Build Phases screen
+and double-click on the source files row in the Compile Sources. Then enter
+<code>-fobjc-arc</code> in the box and repeat for all your source files.</p>
+
+<p>If you are ready to convert your non-ARC project to ARC, you can use the ARC
+Migration Wizard. In Xcode, from the Edit menu, select <code>Refactor</code> then
+<code>Convert to Objective-C ARC...</code></p>
+
+<p>See the <a href="https://developer.apple.com/library/ios/releasenotes/ObjectiveC/RN-TransitioningToARC/Introduction/Introduction.html">Transitioning to ARC Release Notes</a>
+for more details.</p>
+<h2 id='uapush-changes' class='heading'>UAPush Changes</h2>
+
+<p>The <code>UARegistrationObserver</code> has been replaced with <code>UARegistrationDelegate</code>.
+The <code>UARegistrationDelegate</code> has the same method signatures as
+<code>UARegistrationObserver</code>, but developers should use the <code>UARegistrationDelegate</code>
+because <code>UAObservable</code> has been deprecated.</p>
+
+<p>The <code>delegate</code> property has been replaced with <code>pushNotificationDelegate</code>.</p>
+
+<p>Protocol and property deprecated:</p>
+<pre class="highlight plaintext"><code>@protocol UARegistrationObserver
+@property (nonatomic, weak) id&lt;UAPushNotificationDelegate&gt; delegate;
+</code></pre>
+
+<p>Properties added:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) id&lt;UARegistrationDelegate&gt; registrationDelegate;
+@property (nonatomic, weak) id&lt;UAPushNotificationDelegate&gt; pushNotificationDelegate;
+</code></pre>
+<h2 id='uaobservable-changes' class='heading'>UAObservable Changes</h2>
+
+<p>The UAObservable and all related protocols/methods have been deprecated as of
+3.0.0. They have been replaced with three categories: block-based methods,
+delegate-based methods, and <code>NSNotificationCenter</code> events. This provides the
+developer with flexibility on selecting the option best for them. Examples on
+implementing these options are provided below.</p>
+
+<p>Interface deprecated:</p>
+<pre class="highlight plaintext"><code>@interface UAObservable : NSObject;
+</code></pre>
+<h2 id='uainboxmessagelist-changes' class='heading'>UAInboxMessageList Changes</h2>
+
+<p>Methods deprecated:</p>
+<pre class="highlight plaintext"><code>- (void)retrieveMessageList;
+- (void)performBatchUpdateCommand:(UABatchUpdateCommand)command withMessageIndexSet:(NSIndexSet *)messageIndexSet;
+</code></pre>
+
+<p>Replaced with block and delegate-based methods:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)retrieveMessageListWithSuccessBlock:(UAInboxMessageListCallbackBlock)successBlock
+                                     withFailureBlock:(UAInboxMessageListCallbackBlock)failureBlock;
+
+- (UADisposable *)retrieveMessageListWithDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+
+- (UADisposable *)performBatchUpdateCommand:(UABatchUpdateCommand)command
+                        withMessageIndexSet:(NSIndexSet *)messageIndexSet
+                           withSuccessBlock:(UAInboxMessageListCallbackBlock)successBlock
+                           withFailureBlock:(UAInboxMessageListCallbackBlock)failureBlock;
+
+- (UADisposable *)performBatchUpdateCommand:(UABatchUpdateCommand)command
+                        withMessageIndexSet:(NSIndexSet *)messageIndexSet
+                              withDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+</code></pre>
+
+<p>Implementation example:</p>
+<pre class="highlight plaintext"><code>// old way
+[[UAInbox shared].messageList retrieveMessageList];
+
+// new way with delegates
+UADisposable *disposable = [[UAInbox shared].messageList retrieveMessageListWithDelegate:someDelegate];
+// OPTIONAL: if you want to cancel *callbacks* before the operation is finished (not the operation in its entirety)
+// [disposable dispose];
+
+// new way with blocks
+disposable = [[UAInbox shared].messageList retrieveMessageListWithSuccessBlock:^{
+    // success!
+} withFailureBlock:^{
+    // failure :(
+}];
+// OPTIONAL: you can cancel the success/failure block execution the same way
+// [disposable dispose];
+</code></pre>
+<h2 id='uainboxmessage-changes' class='heading'>UAInboxMessage Changes</h2>
+
+<p>Method deprecated:</p>
+<pre class="highlight plaintext"><code>- (BOOL)markAsRead;
+</code></pre>
+
+<p>Replaced with block and delegate-based methods:</p>
+<pre class="highlight plaintext"><code>- (UADisposable *)markAsReadWithSuccessBlock:(UAInboxMessageCallbackBlock)successBlock
+                            withFailureBlock:(UAInboxMessageCallbackBlock)failureBlock;
+
+- (UADisposable *)markAsReadWithDelegate:(id&lt;UAInboxMessageListDelegate&gt;)delegate;
+</code></pre>
+<h2 id='uainboxmessagelistobserver-changes' class='heading'>UAInboxMessageListObserver Changes</h2>
+
+<p>The <code>UAInboxMessageListObserver</code> functionality has been replaced with the
+callback-based methods discussed above, as well as <code>NSNotificationCenter</code>
+events.</p>
+
+<p>Protocol deprecated:</p>
+<pre class="highlight plaintext"><code>@protocol UAInboxMessageListObserver &lt;NSObject&gt;
+</code></pre>
+<h2 id='new-nsnotificationcenter-events' class='heading'>New NSNotificationCenter events</h2>
+
+<p>In the <code>UAInboxMessageListObserver</code> protocol, <code>messageListWillLoad</code> would be
+followed by <code>messageListLoaded</code> or <code>inboxLoadFailed</code> depending on the success of
+the operation. The same basic pattern also holds for batch updating, where you&rsquo;d
+see a <code>messageListWillLoad</code> followed by <code>batchMarkAsReadFinished</code>/
+<code>batchMarkAsReadFailed</code>/etc.</p>
+
+<p>The <code>NSNotifications</code> are an attempt to simplify that, since if all you care
+about is whether the inbox is currently updating you don&rsquo;t need to implement all
+those different success/failure methods in order to continue once the list is
+finished updating. For that reason, the <code>UAInboxMessageListUpdatedNotification</code>
+is <em>always</em> called once the operation is finished, regardless of its success/
+failure status, and regardless of whether it&rsquo;s a retrieve or batch update
+operation.</p>
+<pre class="highlight plaintext"><code>// NSNotification posted when the message list is about to update.
+extern NSString * const UAInboxMessageListWillUpdateNotification;
+// NSNotification posted when the message list is finished updating.
+extern NSString * const UAInboxMessageListUpdatedNotification;
+</code></pre>
+
+<p>Implementation example:</p>
+<pre class="highlight plaintext"><code>// UAInboxMessageListController.m
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    ...
+
+    // new way with NSNotifications
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(messageListWillUpdate)
+                                                 name:UAInboxMessageListWillUpdateNotification
+                                               object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(messageListUpdated)
+                                                name:UAInboxMessageListUpdatedNotification
+                                              object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UAInboxMessageListWillUpdateNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UAInboxMessageListUpdatedNotification object:nil];
+}
+</code></pre>
+<h1 id='urban-airship-library-2-0-0-to-2-1-0' class='heading'>Urban Airship Library 2.0.0 to 2.1.0</h1>
+
+<p>This release is a drop-in replacement for 2.0.x. It supports iOS 7 <a href="https://docs.urbanairship.com/platform/ios#background-push">Background Push</a>
+and also marks the last release for manual reference counting.</p>
+<h1 id='urban-airship-library-1-4-0-to-2-0-0' class='heading'>Urban Airship Library 1.4.0 to 2.0.0</h1>
+<h2 id='app-delegate-changes' class='heading'>App Delegate Changes</h2>
+
+<p>Much of the manual intervention previously required in the app delegate has been made unnecessary, as the library can now handle <code>UIApplicationDelegate</code> callbacks on its own, forwarding the calls to your app delegate transparently.</p>
+
+<p>The primary <code>takeOff</code> call is still required in the <code>didFinishLaunchingWithOptions</code> method.  However, your app delegate no longer needs to implement any of the device token registration callbacks, and the remote notification callback is strictly optional.</p>
+
+<p>Required Methods:</p>
+<pre class="highlight plaintext"><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+</code></pre>
+
+<p>No Longer Required:</p>
+<pre class="highlight plaintext"><code>- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *) error;
+</code></pre>
+
+<p>Optional Methods:</p>
+<pre class="highlight plaintext"><code>- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo;
+</code></pre>
+
+<p>It should be noted that the above remote notification callback is fully optional, and it is no
+longer necessary to pass the notification into the UA library in order for our analytics to report opens properly.</p>
+
+<p>Instead, developers should implement the <code>UAPushNotificationDelegate</code> protocol methods and use these to perform
+custom logic such as resetting an application icon badge:</p>
+<pre class="highlight plaintext"><code>// Called when a notification is received while the application is in the foreground
+- (void)receivedForegroundNotification:(NSDictionary *)notification
+
+// Called when the application is started or resumed by a user opening a notification
+- (void)launchedFromNotification:(NSDictionary *)notification;
+</code></pre>
+<h2 id='uairship-takeoff-changes' class='heading'>UAirship takeOff Changes</h2>
+
+<p><code>takeOff</code> no longer requires passing an <code>NSDictionary</code>.  Instead create a <code>UAConfig</code> model object to
+pass into <code>takeOff</code>.</p>
+
+<p>Example:</p>
+<pre class="highlight plaintext"><code>// Create the UAConfig model object.  Loads configuration
+// from AirshipConfig.plist
+UAConfig *config = [UAConfig defaultConfig];
+
+// Apply any plist overrides to the config object
+// e.g., config.developmentAppKey = @"YourKey";
+
+// Call takeOff (which creates the UAirship singleton)
+// You may also simply call [UAirship takeOff] without any arguments if you want
+// to use the default config loaded from AirshipConfig.plist
+[UAirship takeOff:config];
+</code></pre>
+
+<p>In addition, it is no longer necessary to call <code>registerForRemoteNotificationTypes</code> on <code>UAPush</code>.  Instead, set the notification types property as shown below, and the library will register for you automatically:</p>
+<pre class="highlight plaintext"><code>[UAPush shared].notificationTypes = (UIRemoteNotificationTypeBadge |
+                                     UIRemoteNotificationTypeSound |
+                                     UIRemoteNotificationTypeAlert);
+</code></pre>
+
+<p>For more detailed information on how to customize configuration, see <a href="https://docs.urbanairship.com/platform/ios#platform-ios-advanced">iOS Advanced Features</a>.</p>
+<h2 id='uainboxui-protocol-changes' class='heading'>UAInboxUI Protocol Changes</h2>
+
+<p>Protocol methods removed:</p>
+<pre class="highlight plaintext"><code>+ (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)displayMessage:(UIViewController *)viewController message:(NSString*)messageID;
+</code></pre>
+
+<p>Protocol methods added:</p>
+<pre class="highlight plaintext"><code>+ (void)displayInboxInViewController:(UIViewController *)parentViewController animated:(BOOL)animated;
++ (void)displayMessageWithID:(NSString *)messageID inViewController:(UIViewController *)parentViewController;
+</code></pre>
+
+<p>These core UI protocol methods have been slightly renamed in order to better represent their functionality.</p>
+<h2 id='uainbox-changes' class='heading'>UAInbox Changes</h2>
+
+<p>Methods removed:</p>
+<pre class="highlight plaintext"><code>+ (void)displayInbox:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)displayMessage:(UIViewController *)viewController message:(NSString*)messageID;
+</code></pre>
+
+<p>Methods added:</p>
+<pre class="highlight plaintext"><code>+ (void)displayInboxInViewController:(UIViewController *)parentViewController animated:(BOOL)animated;
++ (void)displayMessageWithID:(NSString *)messageID inViewController:(UIViewController *)parentViewController;
+</code></pre>
+
+<p>Since these methods are simply convenience wrappers around the <code>UAInboxUI</code> protocol methods mentioned above, they have changed as well to match the new protocol method definitions.</p>
+<h2 id='uainboxpushhandlerdelegate-protocol-changes' class='heading'>UAInboxPushHandlerDelegate Protocol Changes</h2>
+
+<p>Protocol methods removed:</p>
+<pre class="highlight plaintext"><code>- (void)newMessageArrived:(NSDictionary *)message;
+</code></pre>
+
+<p>Protocol methods added:</p>
+<pre class="highlight plaintext"><code>- (void)richPushNotificationArrived:(NSDictionary *)notification;
+- (void)applicationLaunchedWithRichPushNotification:(NSDictionary *)notification;
+- (void)richPushMessageAvailable:(UAInboxMessage *)richPushMessage;
+- (void)launchRichPushMessageAvailable:(UAInboxMessage *)richPushMessage;
+</code></pre>
+
+<p>The protocol method <code>newMessageArrived</code> has been replaced with the more aptly named <code>richPushNotificationArrived</code>,
+which more closely follows the pattern used in the non-rich push sections of the library, and more aptly represents the
+event taking place.  This method is called when a new rich push notification is received, but before the inbox contents
+have been updated with the associated message content. We have also added a companion method, <code>applicationLaunchedWithRichPushNotification</code>, which is called when the user opens the app by tapping a rich push notification in the iOS message center.</p>
+
+<p>In prior library versions, bridging push events such as these with the display of rich message contents
+was always somewhat cumbersome.  We&rsquo;ve simplified this flow with two new methods: <code>richPushMessageAvailable</code>
+and <code>launchRichPushMessageAvailable</code>.  As of version 2.0.0, the library will automatically update the inbox contents
+following the delivery of a rich push notification, and when the associated message is available for viewing, one of
+these two methods will be called.  Just as above, these events are separated between in-app and launch notification
+scenarios, allowing developer to wire up custom logic for these cases if they so choose.</p>
+<h2 id='uainboxalerthandler-changes' class='heading'>UAInboxAlertHandler Changes</h2>
+
+<p>Methods removed:</p>
+<pre class="highlight plaintext"><code>- (void)showNewMessageAlert:(NSString *)message;
+</code></pre>
+
+<p>Methods added:</p>
+<pre class="highlight plaintext"><code>- (void)showNewMessageAlert:(NSString *)message withViewBlock:(UAInboxAlertHandlerViewBlock)viewBlock;
+</code></pre>
+
+<p>In the <code>UAInboxAlertHandler</code> class, the public method <code>showNewMessageAler</code> has been replaced with <code>showNewMessageAlert:withViewBlock</code>, which allows the developer to pass in a block to be executed if the user taps <em>View</em> in the displayed alert dialog.  Historically this class has been used in our reference implementations of the <code>UAInboxPushHandlerDelegate</code> protocol in the <code>UAInboxUI</code> and <code>UAInboxNavUI</code> classes, to facilitate viewing rich messages as they come in while the app is running.  With the changes to the protocol outlined above, it is now the responsibility of the delegate to defer message display to the appropirate event, namely when the message is available for display.</p>
+
+<p>An example taken from the reference <code>UAInboxUI</code> implementation is shown below:</p>
+<pre class="highlight plaintext"><code>- (void)richPushMessageAvailable:(UAInboxMessage *)richPushMessage {
+    NSString *alertText = richPushMessage.title;
+    [self.alertHandler showNewMessageAlert:alertText withViewBlock:^{
+        [[UAInbox shared].uiClass displayMessageWithID:richPushMessage.messageID inViewController:nil];
+    }];
+}
+</code></pre>
+<h2 id='uapush-changes' class='heading'>UAPush Changes</h2>
+
+<p>Deprecated Methods removed:</p>
+<pre class="highlight plaintext"><code>- (void)enableAutobadge:(BOOL)enabled
+- (void)updateTags:(NSMutableArray *)values
+- (void)updateAlias:(NSString *)value
+- (void)disableQuietTime
+- (void)tz
+- (void)setTz
+</code></pre>
+
+<p>Device registration methods and property functionality was removed. These details are now handled internally by the SDK.</p>
+<pre class="highlight plaintext"><code>- (void)registerDeviceTokenWithExtraInfo:(NSDictionary *)info;
+- (void)registerDeviceToken:(NSData *)token withAlias:(NSString *)alias;
+- (void)registerDeviceToken:(NSData *)token withExtraInfo:(NSDictionary *)info;
+- (void)unRegisterDeviceToken;
+
+@property (nonatomic, assign) BOOL retryOnConnectionError;
+</code></pre>
+
+<p>Demonstration methods have been removed, though they can still be found in <code>UAPushUI</code>:</p>
+<pre class="highlight plaintext"><code>+ (void)openTokenSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeTokenSettingsAnimated:(BOOL)animated;
+</code></pre>
+
+<p>Properties renamed:</p>
+<pre class="highlight plaintext"><code>@property (nonatomic, assign) BOOL deviceTagsEnabled;  // Use to be canEditTagsFromDevice
+</code></pre>
+
+<p>The land method is now internal only. It will be called automatically with the new auto app delegate.</p>
+<pre class="highlight plaintext"><code>+ (void)land;
+</code></pre>
+<h2 id='uapushnotificationdelegate-protocol-changes' class='heading'>UAPushNotificationDelegate Protocol Changes</h2>
+
+<p>Protocol methods removed:</p>
+<pre class="highlight plaintext"><code>// Called when a notification is received while the application is in the foreground
+- (void)receivedForegroundNotification:(NSDictionary *)notification;
+
+// Called when the application is started or resumed by a user opening a notification
+- (void)launchedFromNotification:(NSDictionary *)notification;
+</code></pre>
+
+<p>Protocol methods added:</p>
+<pre class="highlight plaintext"><code>- (void)receivedForegroundNotification:(NSDictionary *)notification;
+- (void)launchedFromNotification:(NSDictionary *)notification;
+</code></pre>
+<h2 id='uapushuiprotocol-protocol-changes' class='heading'>UAPushUIProtocol Protocol Changes</h2>
+
+<p>Demonstration methods have been removed, they can still be found in <code>UAPushUI</code>:</p>
+<pre class="highlight plaintext"><code>+ (void)openTokenSettings:(UIViewController *)viewController animated:(BOOL)animated;
++ (void)closeTokenSettingsAnimated:(BOOL)animated;
+</code></pre>
+<h2 id='uaregistrationobserver-protocol-changes' class='heading'>UARegistrationObserver Protocol Changes</h2>
+
+<p>Protocol methods renamed:</p>
+<pre class="highlight plaintext"><code>- (void)unregisterDeviceTokenSucceeded; // Renamed from unRegisterDeviceTokenSucceeded
+- (void)unregisterDeviceTokenFailed:(UAHTTPRequest *)request; // Renamed from unRegisterDeviceTokenFailed
+</code></pre>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2021 <a class="link" href="https://urbanairship.com" target="_blank" rel="external">Urban Airship</a>. All rights reserved. (Last updated: 2021-04-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

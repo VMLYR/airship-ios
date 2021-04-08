@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAccengage/Source/AirshipAccengage.h",
+      "line": 10,
+      "symbol": "AirshipAccengageVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAccengage/Source/AirshipAccengage.h",
+      "line": 13,
+      "symbol": "AirshipAccengageVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAccengage/Source/Public/ACCDeviceInformationSet.h",
+      "line": 7,
+      "symbol": "ACCDeviceInformationSet",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAccengage/Source/Public/ACCUserProfile.h",
+      "line": 8,
+      "symbol": "ACCUserProfile",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAccengage/Source/Public/Accengage.h",
+      "line": 8,
+      "symbol": "Accengage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

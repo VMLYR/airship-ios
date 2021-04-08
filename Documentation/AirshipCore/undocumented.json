@@ -1,0 +1,467 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/AirshipCore.h",
+      "line": 8,
+      "symbol": "AirshipCoreVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/AirshipCore.h",
+      "line": 11,
+      "symbol": "AirshipCoreVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/NSManagedObjectContext+UAAdditions.h",
+      "line": 7,
+      "symbol": "NSManagedObjectContext(UAAdditions)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/NSObject+UAAdditions.h",
+      "line": 41,
+      "symbol": "NSObject(UAAdditions)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/NSString+UALocalizationAdditions.h",
+      "line": 5,
+      "symbol": "NSString(UALocalizationAdditions)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/NSURLResponse+UAAdditions.h",
+      "line": 4,
+      "symbol": "NSURLResponse(UAAdditions)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAction+Operators.h",
+      "line": 58,
+      "symbol": "UAAction(Operators)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAnalytics.h",
+      "line": 43,
+      "symbol": "UACustomEventAdded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAnalytics.h",
+      "line": 44,
+      "symbol": "UARegionEventAdded",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAnalytics.h",
+      "line": 45,
+      "symbol": "UAScreenTracked",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAnalytics.h",
+      "line": 46,
+      "symbol": "UAEventKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAnalytics.h",
+      "line": 47,
+      "symbol": "UAScreenKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 10,
+      "symbol": "UAAttributePayloadKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 11,
+      "symbol": "UAAttributeActionKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 12,
+      "symbol": "UAAttributeValueKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 13,
+      "symbol": "UAAttributeNameKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 14,
+      "symbol": "UAAttributeTimestampKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 15,
+      "symbol": "UAAttributeSetActionKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributePendingMutations.h",
+      "line": 16,
+      "symbol": "UAAttributeRemoveActionKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAAttributes.h",
+      "line": 5,
+      "symbol": "UAAttributes",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAConfig.h",
+      "line": 75,
+      "symbol": "UAConfig.site",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 18,
+      "symbol": "UACustomEventNameKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 19,
+      "symbol": "UACustomEventValueKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 20,
+      "symbol": "UACustomEventPropertiesKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 21,
+      "symbol": "UACustomEventTransactionIDKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 22,
+      "symbol": "UACustomEventInteractionIDKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UACustomEvent.h",
+      "line": 23,
+      "symbol": "UACustomEventInteractionTypeKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAExtendableAnalyticsHeaders.h",
+      "line": 7,
+      "symbol": "UAAnalyticsHeadersBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAGlobal.h",
+      "line": 89,
+      "symbol": "uaLoggingEnabled",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAGlobal.h",
+      "line": 90,
+      "symbol": "uaLogLevel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAGlobal.h",
+      "line": 91,
+      "symbol": "uaLoudImpErrorLoggingEnabled",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAJSONSerialization.h",
+      "line": 8,
+      "symbol": "UAJSONSerialization",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UALocaleManager.h",
+      "line": 7,
+      "symbol": "UALocaleManager",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UANSArrayValueTransformer.h",
+      "line": 7,
+      "symbol": "UANSArrayValueTransformer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UANSDictionaryValueTransformer.h",
+      "line": 7,
+      "symbol": "UANSDictionaryValueTransformer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UANSURLValueTransformer.h",
+      "line": 7,
+      "symbol": "UANSURLValueTransformer",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UANotificationAction.h",
+      "line": 30,
+      "symbol": "UANotificationActionOptionNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UANotificationCategory.h",
+      "line": 33,
+      "symbol": "UANotificationCategoryOptionNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 36,
+      "symbol": "UANotificationOptions.UANotificationOptionNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 37,
+      "symbol": "UANotificationOptions.UANotificationOptionBadge",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 38,
+      "symbol": "UANotificationOptions.UANotificationOptionSound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 39,
+      "symbol": "UANotificationOptions.UANotificationOptionAlert",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 40,
+      "symbol": "UANotificationOptions.UANotificationOptionCarPlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 41,
+      "symbol": "UANotificationOptions.UANotificationOptionCriticalAlert",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 42,
+      "symbol": "UANotificationOptions.UANotificationOptionProvidesAppNotificationSettings",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 43,
+      "symbol": "UANotificationOptions.UANotificationOptionProvisional",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 44,
+      "symbol": "UANotificationOptions.UANotificationOptionAnnouncement",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 51,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 52,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsBadge",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 53,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsSound",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 54,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsAlert",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 55,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsCarPlay",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 56,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsLockScreen",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 57,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsNotificationCenter",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 58,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsCriticalAlert",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 59,
+      "symbol": "UAAuthorizedNotificationSettings.UAAuthorizedNotificationSettingsAnnouncement",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 66,
+      "symbol": "UAAuthorizationStatus.UAAuthorizationStatusNotDetermined",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 67,
+      "symbol": "UAAuthorizationStatus.UAAuthorizationStatusDenied",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 68,
+      "symbol": "UAAuthorizationStatus.UAAuthorizationStatusAuthorized",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 69,
+      "symbol": "UAAuthorizationStatus.UAAuthorizationStatusProvisional",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAPush.h",
+      "line": 70,
+      "symbol": "UAAuthorizationStatus.UAAuthorizationStatusEphemeral",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UARemoteDataPayload.h",
+      "line": 17,
+      "symbol": "UARemoteDataMetadataCountryKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UARemoteDataPayload.h",
+      "line": 18,
+      "symbol": "UARemoteDataMetadataSDKVersionKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAUtils.h",
+      "line": 103,
+      "symbol": "UAUtils.+getReadableFileSizeFromBytes:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAViewUtils.h",
+      "line": 6,
+      "symbol": "UAViewUtils",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/UAWebView.h",
+      "line": 8,
+      "symbol": "UAWebView",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

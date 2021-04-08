@@ -1,0 +1,6 @@
+framework module AirshipExtendedActions {
+  umbrella header "AirshipExtendedActions.h"
+
+  export *
+  module * { export * }
+}

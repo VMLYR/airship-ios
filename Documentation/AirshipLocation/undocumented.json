@@ -1,0 +1,159 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/AirshipLocation.h",
+      "line": 10,
+      "symbol": "AirshipLocationVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/AirshipLocation.h",
+      "line": 13,
+      "symbol": "AirshipLocationVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 11,
+      "symbol": "UALocationEventForegroundKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 12,
+      "symbol": "UALocationEventLatitudeKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 13,
+      "symbol": "UALocationEventLongitudeKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 14,
+      "symbol": "UALocationEventDesiredAccuracyKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 15,
+      "symbol": "UALocationEventUpdateTypeKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 16,
+      "symbol": "UALocationEventProviderKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 17,
+      "symbol": "UALocationEventDistanceFilterKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 18,
+      "symbol": "UALocationEventHorizontalAccuracyKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 19,
+      "symbol": "UALocationEventVerticalAccuracyKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 21,
+      "symbol": "UALocationEventUpdateType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 22,
+      "symbol": "UALocationEventAnalyticsType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 23,
+      "symbol": "UALocationEventUpdateTypeChange",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 24,
+      "symbol": "UALocationEventUpdateTypeContinuous",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 25,
+      "symbol": "UALocationEventUpdateTypeSingle",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 26,
+      "symbol": "UALocationEventUpdateTypeNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 28,
+      "symbol": "UALocationServiceProviderType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 29,
+      "symbol": "UALocationServiceProviderGps",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 30,
+      "symbol": "UALocationServiceProviderNetwork",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 31,
+      "symbol": "UALocationServiceProviderUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipLocation/Source/Public/UALocationEvent.h",
+      "line": 33,
+      "symbol": "UAAnalyticsValueNone",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

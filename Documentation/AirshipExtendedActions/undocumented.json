@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipExtendedActions/Source/AirshipExtendedActions.h",
+      "line": 11,
+      "symbol": "AirshipExtendedActionsVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipExtendedActions/Source/AirshipExtendedActions.h",
+      "line": 14,
+      "symbol": "AirshipExtendedActionsVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}

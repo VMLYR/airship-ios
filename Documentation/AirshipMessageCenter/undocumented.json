@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/AirshipMessageCenter.h",
+      "line": 10,
+      "symbol": "AirshipMessageCenterVersionNumber",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/AirshipMessageCenter.h",
+      "line": 13,
+      "symbol": "AirshipMessageCenterVersionString",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/Public/UADefaultMessageCenterMessageViewController.h",
+      "line": 60,
+      "symbol": "UADefaultMessageCenterMessageViewController.-initWithCoder:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/Public/UADefaultMessageCenterSplitViewDelegate.h",
+      "line": 15,
+      "symbol": "UADefaultMessageCenterSplitViewDelegate.-initWithListViewController:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/Public/UAInboxMessage.h",
+      "line": 12,
+      "symbol": "UAInboxMessageCallbackBlock",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipMessageCenter/Source/Public/UAUser.h",
+      "line": 9,
+      "symbol": "UAUserCreatedNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/ios-library/ios-library"
+}
