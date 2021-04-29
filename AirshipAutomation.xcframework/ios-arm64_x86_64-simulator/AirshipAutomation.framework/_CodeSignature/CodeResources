@@ -10,11 +10,11 @@
 		</data>
 		<key>Headers/AirshipAutomationLib.h</key>
 		<data>
-		ERd7iikc2G0n5Vmm6rRUi8TI//s=
+		oqMAvYirObtWZNUiH7fKefp/rH8=
 		</data>
 		<key>Headers/UAActionSchedule.h</key>
 		<data>
-		H9VcG3aLdxPFyxEAJWiUpgWvlts=
+		CUExQiOOz7u1qEctfH/BfNx8zoc=
 		</data>
 		<key>Headers/UAAirshipAutomationCoreImport.h</key>
 		<data>
@@ -32,9 +32,13 @@
 		<data>
 		pzjM3laqOcNrAnyi3L4moqUV7jQ=
 		</data>
+		<key>Headers/UADeferredSchedule.h</key>
+		<data>
+		5NNYM+1dwC8K2KUn5TfXumQYHuI=
+		</data>
 		<key>Headers/UAInAppAutomation.h</key>
 		<data>
-		26hWVvj73A+2+Gz8H1AlaJSVCFs=
+		HqOUf2ZR8/Ukb9HeTU0TqjSzAjY=
 		</data>
 		<key>Headers/UAInAppMessage.h</key>
 		<data>
@@ -192,6 +196,10 @@
 		<data>
 		DAAY4UMU5hq5TxTZa+Vgr7pmVm4=
 		</data>
+		<key>Headers/UAScheduleDeferredData.h</key>
+		<data>
+		mgmRVI2+zri47CVcELxDa/vgIcM=
+		</data>
 		<key>Headers/UAScheduleDelay.h</key>
 		<data>
 		mmH4ek7ch9wSWQKBRJKyuvGIVQM=
@@ -210,7 +218,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ypuu7VJO3k9ymnPVQnWy2ZBE2Y4=
+		BSkvxaYilrpRHySvBRlPUPVGvIo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -219,10 +227,6 @@
 		<key>PrivateHeaders/UAInAppAudienceHistorian+Internal.h</key>
 		<data>
 		ZOeH/sFKrCHjuMMMq79eixLD9Ao=
-		</data>
-		<key>PrivateHeaders/UAScheduleDeferredData+Internal.h</key>
-		<data>
-		T0QTDqFfm9sDu5Jr2hqJnHjwMNM=
 		</data>
 		<key>PrivateHeaders/UAScheduleTriggerContextTransformer+Internal.h</key>
 		<data>
@@ -282,31 +286,31 @@
 		</data>
 		<key>UAInAppMessageBannerContentView.nib</key>
 		<data>
-		Rx7CLgBYy3FNLcBqJ+sa/0xHRak=
+		gC4S8H3awTYAot5AhWK9lQorUqc=
 		</data>
 		<key>UAInAppMessageBannerView.nib</key>
 		<data>
-		q/3e2E+SG1yXXNJHRaaEWcA4VDY=
+		ygSNAcZWVEQl7gWDa7Kid0quBeU=
 		</data>
 		<key>UAInAppMessageButtonView.nib</key>
 		<data>
-		mCKzWqF8XxaLnxg1HExuzLwRr1o=
+		YMvc9NIooaeGZzoMwC+CN43ZCrk=
 		</data>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<data>
-		y1pd7zq+TO6rVRUnU3p2e6X8woc=
+		auB4qhdYzUpgcJnzHZWNqTmhFtA=
 		</data>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<data>
-		9h66i3Biqy27K+DcscnMUqUDujc=
+		RyWObLxluO5kBguJ9lNjgwjrJTM=
 		</data>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<data>
-		hGe5xEOgbTgY4Selqat86iDAD7Q=
+		PPiWw/Z/YAZWkumn+Z0o3g8+7vk=
 		</data>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<data>
-		i6gb2n/4FpEBGfgOvexIiGeLdsg=
+		IF3+TSjhVJiCwTSOCe7PPXHE1LE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -322,14 +326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xQNaKZOKLAvIH3dBPHjNrBxdeVXAIIEWJSwGvR4oE5s=
+			ZkP2XdBeC/SnSBgntwHa0Re4PcMIVqPgBz5mMqFXjU8=
 			</data>
 		</dict>
 		<key>Headers/UAActionSchedule.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0At/B16BHyOdnFGWecvmzSHtWuh69cuAjgmSSd0wNlw=
+			2E2BHf0oQJoPj3D2he3Ruv2EplwMBGP4QLEVb2V+Gsk=
 			</data>
 		</dict>
 		<key>Headers/UAAirshipAutomationCoreImport.h</key>
@@ -360,11 +364,18 @@
 			9UeYb5OHRezCi+shZA/7Wix0pWDz+w3HF+17uLaIp10=
 			</data>
 		</dict>
+		<key>Headers/UADeferredSchedule.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mC6SZKcVQtVrVpT2WXwCP0+j1Jr9SatiNS6UMGZQXm0=
+			</data>
+		</dict>
 		<key>Headers/UAInAppAutomation.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RE950N+sjTCflhWafKbb3x9Id0u+HKLSPltr9Yh/aA0=
+			pKltWZAGXLVe0W9LnCxo5U4TW9wCrhd8sgf40od6j3M=
 			</data>
 		</dict>
 		<key>Headers/UAInAppMessage.h</key>
@@ -640,6 +651,13 @@
 			BFyU7l3n3CNsHYuTgYfPkBD0qMU7r8ldjDWIx7SjkyY=
 			</data>
 		</dict>
+		<key>Headers/UAScheduleDeferredData.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			npVR1xu8Arxo01kKVxUo39JydKmX2TxJ4f484rfvgVs=
+			</data>
+		</dict>
 		<key>Headers/UAScheduleDelay.h</key>
 		<dict>
 			<key>hash2</key>
@@ -680,13 +698,6 @@
 			<key>hash2</key>
 			<data>
 			oXt8NgMeUnvwGICZL3NcnE1CfHLVQWMR6M6gOr4UpbQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/UAScheduleDeferredData+Internal.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hz8xOONhRulzXjG4btQetkNmfYVVKP6U3eofg6f25Os=
 			</data>
 		</dict>
 		<key>PrivateHeaders/UAScheduleTriggerContextTransformer+Internal.h</key>
@@ -791,49 +802,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VSdTTbU7kL8Wl82iMDE+t1RG05+ZWzZ1g3urxsxI5SM=
+			vts0Y+vRm5BYndeNlMmpd/9Y+WvnRL8NjpBSiBeWvQc=
 			</data>
 		</dict>
 		<key>UAInAppMessageBannerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4jp1YSv/2MalPLZKnyquiscSTdpjsSB9O8E2sHYWoAw=
+			nzBOdzDwQ9G+23ji1jVF35tWLAJAZAdxk7i4J1t7sJE=
 			</data>
 		</dict>
 		<key>UAInAppMessageButtonView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FWhH22C2bOJxVKOR7xCkbFg17z1PTDspFR91SWtJS78=
+			Y51bayLRrQG+USbRZUXBgxvjMzptdmaV9RwTCqfYmL4=
 			</data>
 		</dict>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RhpwjAddyLoFzOjh0pG2QmdbtrVG4JMwCS95tdGvBsA=
+			7PoHXl7C6eynFXvhYfRxTX0VZBebWx9j0u5EUxnZuaQ=
 			</data>
 		</dict>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nf78y0vc+g0g0NNX/fxQYX7FVyLC0yiydqsYdBVjlxM=
+			Xsr4MO0mNavzlbJgFaTvUB6nzL0Ugx8rIrlamowMXag=
 			</data>
 		</dict>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			enxKlFaa97LY9dlkQcXaToyBQgGDigGTOxbRGALobcc=
+			dEmyTCH9Z64zBRKS7UZ8nV8nxLziIcSEF17u8RL/lV0=
 			</data>
 		</dict>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/TJAjwjRJOr7rwl7coTCzJDYKiEXBZnyc0/25qAo448=
+			wVk0NOva3Q6t/hE/IQNRNgnttoIOj9k7gnzQARcVql4=
 			</data>
 		</dict>
 	</dict>

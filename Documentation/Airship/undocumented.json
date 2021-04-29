@@ -162,6 +162,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAScheduleDeferredData.h",
+      "line": 22,
+      "symbol": "UAScheduleDataDeferredType.UAScheduleDataDeferredTypeUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAScheduleDeferredData.h",
+      "line": 25,
+      "symbol": "UAScheduleDataDeferredType.UAScheduleDataDeferredTypeInAppMessage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipCore/Source/Public/NSManagedObjectContext+UAAdditions.h",
       "line": 7,
       "symbol": "NSManagedObjectContext(UAAdditions)",

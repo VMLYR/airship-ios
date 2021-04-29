@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>migration-guide-12-13  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="migration-guide-12-13  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">AirshipChat 14.4.0 Docs</a></p>
+        <p class="header-right"><a href="https://github.com/urbanairship/ios-library"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">AirshipChat Reference</a>
+        <img id="carat" src="img/carat.png" />
+        migration-guide-12-13  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="migration-guide-10-11.html">migration-guide-10-11</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-11-12.html">migration-guide-11-12</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-12-13.html">migration-guide-12-13</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-13-14.html">migration-guide-13-14</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-132.html">migration-guide-13.2</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-9-10.html">migration-guide-9-10</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="migration-guide-legacy.html">migration-guide-legacy</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Chat.html">Chat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ChatMessage.html">ChatMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ChatResources.html">ChatResources</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ChatStyle.html">ChatStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ChatViewController.html">ChatViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:@M@AirshipChat@objc(cs)UAOpenChatAction">OpenChatAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/ChatMessageDirection.html">ChatMessageDirection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ChatOpenDelegate.html">ChatOpenDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/ConversationDelegate.html">ConversationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='airship-ios-sdk-migration-guide' class='heading'>Airship iOS SDK Migration Guide</h1>
+<h1 id='airship-sdk-12-x-to-13-0' class='heading'>Airship SDK 12.x to 13.0</h1>
+
+<p>Airship SDK 13 is a major update that splits the SDK into modules. In basic integration scenarios,
+apps can continue to use a single Airship framework, but as of SDK 13 it is now possible to create
+custom integrations by selecting feature modules. Most of the changes in this release reflect
+the restructuring that makes this possible.</p>
+<h2 id='framework-changes' class='heading'>Framework Changes</h2>
+<h3 id='renamed-sdk-frameworks-and-new-submodules' class='heading'>Renamed SDK frameworks and new submodules</h3>
+
+<p><code>AirshipKit.framework</code> has been replaced with <code>Airship.framework</code>. This framework contains all the SDK
+features, with the exception of location which remains an explicit opt-in. The core SDK and feature
+module frameworks are as follows:</p>
+
+<ul>
+<li><code>AirshipCore.framework</code></li>
+<li><code>AirshipMessageCenter.framework</code></li>
+<li><code>AirshipAutomaton.framework</code></li>
+<li><code>AirshipLocation.framework</code></li>
+<li><code>AirshipExtendedActions.framework</code></li>
+</ul>
+
+<p>The renaming of <code>AirshipKit.framework</code> means that imports for the basic use case have changed. To import
+the full SDK in one step:</p>
+
+<p>Objective-c:</p>
+<pre class="highlight plaintext"><code>@import Airship;
+</code></pre>
+
+<p>Swift:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Airship</span>
+</code></pre>
+<h3 id='location-must-be-used-with-explicit-submodules' class='heading'>Location must be used with explicit submodules</h3>
+
+<p>AirshipLocation is an explicit opt-in, so that apps with no need for location services do not need to
+include location description strings when submitting to Apple. Because of this, AirshipLocation not
+compatible with <code>Airship.framework</code>, and must be imported alongside the core SDK and explicit feature
+modules. If your app is using location, the imports should look like the following:</p>
+
+<p>Objective-c:</p>
+<pre class="highlight plaintext"><code>@import AirshipCore;
+@import AirshipLocation;
+
+// Include these for access to message center, automation and extended actions
+@import AirshipMessageCenter;
+@import AirshipAutomation;
+@import AirshipExtendedActions;
+</code></pre>
+
+<p>Swift:</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">AirshipCore</span>
+<span class="kd">import</span> <span class="kt">AirshipLocation</span>
+
+<span class="c1">// Include these for access to message center, automation and extended actions</span>
+<span class="kd">import</span> <span class="kt">AirshipMessageCenter</span>
+<span class="kd">import</span> <span class="kt">AirshipAutomation</span>
+<span class="kd">import</span> <span class="kt">AirshipExtendedActions</span>
+</code></pre>
+<h2 id='cocoapods' class='heading'>Cocoapods</h2>
+
+<p>The <code>UrbanAirship-iOS-SDK</code>, <code>UrbanAirship-iOS-AppExtensions</code> and <code>UrbanAirship-iOS-Location</code> podspecs are now
+deprecated as of SDK 13.0, though the can continue to be used for SDK 12.x and below. For SDK 13 and above,
+apps using Cocoapods should instead declare Airship dependencies on the <code>Airship</code> podspec, which uses
+subspecs for SDK feature modules. An example Podfile entry is shown below:</p>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'Airship'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+  <span class="c1"># Uncomment to include location</span>
+  <span class="c1"># pod 'Airship/Location', '~&gt; 13.0'</span>
+</code></pre>
+
+<p>To declare feature module dependencies explicitly, simply use the subspecs:</p>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'Airship/Core'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+  <span class="n">pod</span> <span class="s1">'Airship/MessageCenter'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+  <span class="n">pod</span> <span class="s1">'Airship/Automation'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+  <span class="n">pod</span> <span class="s1">'Airship/ExtendedActions'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+  <span class="c1"># Uncomment to include location</span>
+  <span class="c1"># pod 'Airship/Location', '~&gt; 13.0'</span>
+</code></pre>
+
+<p>Similarly, app extensions should now depend on the <code>AirshipExtensions</code> podspec:</p>
+<pre class="highlight ruby"><code>  <span class="n">pod</span> <span class="s1">'AirshipExtensions'</span><span class="p">,</span> <span class="s1">'~&gt; 13.0'</span>
+</code></pre>
+<h3 id='extensions' class='heading'>Extensions</h3>
+
+<p>The <code>AirshpAppExtensions.framework</code> has been renamed to <code>AirshipExtensions.framework</code>. Additionally, the
+class <code>UAMediaContentExtension</code> has been renamed to <code>UANotificationServiceExtension</code>. The functionality
+of the class remains the same, but app extensions subclassing this will need to be updated to use the new class
+name.</p>
+<h2 id='shared-accessor-changes' class='heading'>Shared Accessor Changes</h2>
+
+<p>Shared accessors for functionality such as Message Center and In-App Automation have changed from static
+methods on <code>UAirship</code> to singletons with a standardized <code>shared</code> method.</p>
+<h3 id='removed-from-uairship' class='heading'>Removed from UAirship</h3>
+
+<ul>
+<li><code>messageCenter</code></li>
+<li><code>inAppMessageManager</code></li>
+</ul>
+<h3 id='removed-from-ualocation' class='heading'>Removed from UALocation</h3>
+
+<ul>
+<li><code>sharedLocation</code></li>
+</ul>
+<h3 id='added' class='heading'>Added</h3>
+
+<ul>
+<li><code>UAMessageCenter shared</code></li>
+<li><code>UAInAppMessageManager shared</code></li>
+<li><code>UALocation shared</code></li>
+</ul>
+
+<p>Objective-c:</p>
+<pre class="highlight plaintext"><code>[UAMessageCenter shared]
+[UAInAppMessageManager shared]
+[UALocation shared]
+</code></pre>
+
+<p>Swift:</p>
+<pre class="highlight swift"><code><span class="kt">UAMessageCenter</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span>
+<span class="kt">UAInAppMessageManager</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span>
+<span class="kt">UALocation</span><span class="o">.</span><span class="nf">shared</span><span class="p">()</span>
+</code></pre>
+<h2 id='resource-bundle-changes' class='heading'>Resource bundle changes</h2>
+
+<p>SDK 13 no longer has a dedicated resource bundle, but instead packages resources with their respective modules.
+To access the bundle containing the resources for a particular module, special classes have been added that provide
+accessors for each module.</p>
+<h3 id='removed-from-uairship' class='heading'>Removed from UAirship</h3>
+
+<ul>
+<li><code>resources</code></li>
+</ul>
+<h3 id='added' class='heading'>Added</h3>
+
+<ul>
+<li><code>UAirshipCoreResources bundle</code></li>
+<li><code>UAMessageCenterResources bundle</code></li>
+<li><code>UAAutomationResources bundle</code></li>
+<li><code>UAExtendedActionsResources bundle</code></li>
+</ul>
+
+<p>Objective-c:</p>
+<pre class="highlight plaintext"><code>[UAirshipCoreResources bundle]
+[UAMessageCenterResources bundle]
+[UAAutomationResources bundle]
+[UAExtendedActionsResources bundle]
+</code></pre>
+
+<p>Swift:</p>
+<pre class="highlight swift"><code><span class="kt">UAirshipCoreResources</span><span class="o">.</span><span class="nf">bundle</span><span class="p">()</span>
+<span class="kt">UAMessageCenterResources</span><span class="o">.</span><span class="nf">bundle</span><span class="p">()</span>
+<span class="kt">UAAutomationResources</span><span class="o">.</span><span class="nf">bundle</span><span class="p">()</span>
+<span class="kt">UAExtendedActionsResources</span><span class="o">.</span><span class="nf">bundle</span><span class="p">()</span>
+</code></pre>
+<h2 id='message-center-changes' class='heading'>Message Center changes</h2>
+
+<p>The Message Center codebase has been refactored in order to better support modularization. This includes the removal
+of some legacy classes, such as <code>UAInbox</code>, and a new protocol for Message Center UI, <code>UAMessageCenterDisplayDelegate</code>,
+that makes it easier to build custom interfaces that work more seamlessly with the Message Center module. In place of
+<code>UAInbox</code>, <code>UAMessageCenter</code> provides access to objects such as the message list. Much of the out-of-the-box UI
+functionality previously contained in <code>UAMessageCenter</code> is now part of a new class, <code>UADefaultMessageCenterUI</code>.</p>
+<h3 id='removed' class='heading'>Removed</h3>
+
+<ul>
+<li><code>UAInbox</code></li>
+<li><code>UAInboxDelegate</code></li>
+</ul>
+<h3 id='added' class='heading'>Added</h3>
+
+<ul>
+<li><code>UADefaultMessageCenterUI</code></li>
+<li><code>UAMessageCenterDisplayDelegate</code></li>
+</ul>
+<h3 id='migrating-uainboxdelegate-protocol-methods-to-uamessagecenterdisplaydelegate-protocol' class='heading'>Migrating UAInboxDelegate protocol methods to UAMessageCenterDisplayDelegate protocol</h3>
+
+<ul>
+<li><code>showInbox</code>
+
+<ul>
+<li>Use <code>displayMessageCenterAnimated:</code></li>
+</ul></li>
+<li><code>richPushMessageAvailable</code>
+
+<ul>
+<li>No equivalent in UAMessageCenterDisplayDelegate</li>
+</ul></li>
+<li><code>showMessageForID:</code>
+
+<ul>
+<li>Use <code>displayMessageCenterForMessageID:animated:</code></li>
+</ul></li>
+</ul>
+<h3 id='displaying-the-default-message-center' class='heading'>Displaying the default Message Center</h3>
+
+<p>The methods <code>display</code> and <code>display:(BOOL)animated:</code> remain in <code>UAMessageCenter</code>, which normally display the default
+UI. However, the default UI functionality is now delegated to <code>UADefaultMessageCenterUI</code> class, which implements the
+<code>UAMessageCenterDisplayDelegate</code> protocol. This means that if you set a custom display delegate on <code>UAMessageCenter</code>,
+the display methods in <code>UAMessageCenter</code> will delegate to your class instead of the default UI.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://urbanairship.com" target="_blank" rel="external">Urban Airship</a>. All rights reserved. (Last updated: 2021-04-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

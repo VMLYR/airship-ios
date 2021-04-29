@@ -268,6 +268,16 @@ typedef NS_ENUM(NSUInteger, UACloudSite) {
  */
 @property (nonatomic, copy) NSString *remoteDataAPIURL;
 
+/**
+ * The Airship chat API URL.
+ */
+@property (nonatomic, copy, nullable) NSString *chatURL;
+
+/**
+ * The Airship web socket URL.
+ */
+@property (nonatomic, copy, nullable) NSString *chatWebSocketURL;
+
 ///---------------------------------------------------------------------------------------
 /// @name Factory Methods
 ///---------------------------------------------------------------------------------------
@@ -327,3 +337,4 @@ typedef NS_ENUM(NSUInteger, UACloudSite) {
 @end
 
 NS_ASSUME_NONNULL_END
+

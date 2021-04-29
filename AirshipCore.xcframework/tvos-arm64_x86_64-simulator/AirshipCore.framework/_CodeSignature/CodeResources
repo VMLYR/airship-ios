@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/AirshipLib.h</key>
 		<data>
-		lFWHk6CKdfiRcUshV1jwRDVS4to=
+		uLrzWega2Pj3Vg4RyjVrTt95yjM=
 		</data>
 		<key>Headers/NSDictionary+UAAdditions.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/NSManagedObjectContext+UAAdditions.h</key>
 		<data>
-		Zj5UxgPsK3h0j7W9w17U06VBeBI=
+		WtFg1LoYLMjZ9I1DO4DMZcM2N2c=
 		</data>
 		<key>Headers/NSObject+UAAdditions.h</key>
 		<data>
@@ -100,6 +100,10 @@
 		<data>
 		tzsXS5RopSOdI82h/ViMG4WdEhU=
 		</data>
+		<key>Headers/UAAirshipChatModuleLoaderFactory.h</key>
+		<data>
+		YEUCk7PWjDhFJ3R1PYF0f1fxhJc=
+		</data>
 		<key>Headers/UAAnalytics.h</key>
 		<data>
 		xzXyyQgm5q+JozB5CVZZG7Un1zk=
@@ -162,7 +166,7 @@
 		</data>
 		<key>Headers/UAChannel.h</key>
 		<data>
-		MnZZvb7nrPLt3fdavZKQcPw5ge8=
+		TVwO1rkLkf+7U2RteBGnpj6bluc=
 		</data>
 		<key>Headers/UAChannelCapture.h</key>
 		<data>
@@ -190,7 +194,7 @@
 		</data>
 		<key>Headers/UAConfig.h</key>
 		<data>
-		M2UsL6GsBCULMjg41udQWonJH3U=
+		n4znXxQX4wbNrtuzpMiad2MBh+8=
 		</data>
 		<key>Headers/UACustomEvent.h</key>
 		<data>
@@ -406,11 +410,11 @@
 		</data>
 		<key>Headers/UARemoteConfig.h</key>
 		<data>
-		9/qVZSKYW1jfLsIvvXHw5YQpeRI=
+		xPMEnIVQMLVQCLcLbz0XKtROz6g=
 		</data>
 		<key>Headers/UARemoteConfigURLManager.h</key>
 		<data>
-		xv5LTSMM/I2YUfD0Qrj+NimVtc0=
+		avj9azM+GiROweld4eK7ixP6x1g=
 		</data>
 		<key>Headers/UARemoteDataPayload.h</key>
 		<data>
@@ -426,11 +430,11 @@
 		</data>
 		<key>Headers/UARequest.h</key>
 		<data>
-		t2S9c0VTcia13eabeEeAOhjms80=
+		HKNaGqCjtftVyF8WFFIRU2yLFIs=
 		</data>
 		<key>Headers/UARequestSession.h</key>
 		<data>
-		FpgCLQQJgYhPecGW1HbckdUp5fE=
+		im1zekDxEgE8u5oWelWtsn5m+7U=
 		</data>
 		<key>Headers/UARetailEventTemplate.h</key>
 		<data>
@@ -438,7 +442,7 @@
 		</data>
 		<key>Headers/UARuntimeConfig.h</key>
 		<data>
-		JJG5M5a6vdX3D7GBDZLHWElXLkI=
+		OCQFfPSPLkwOD4RM+2ixMBEF3BU=
 		</data>
 		<key>Headers/UASearchEventTemplate.h</key>
 		<data>
@@ -522,7 +526,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pFPmROxPN9WO5mnXalU/VBr6pdw=
+		CLyLdvpiQizzjavN7VfD7GsU/m0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -612,7 +616,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			arp16DhenAJifY4xflBcSoIJ63c=
+			peWo5gv0bXHMjxa6tSVosVrhvAE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -865,7 +869,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tkVHyVTVLoYCvxvWNXdNVZ8ZbmptyAY3ngQHUo7EhQU=
+			vV0qD6Bq9/QTwkQ/wj3Z4gFcVfSF8EbLBrUmpOlpRd8=
 			</data>
 		</dict>
 		<key>Headers/NSDictionary+UAAdditions.h</key>
@@ -893,7 +897,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gIVQk/bxgRyEm4PFiq8LQhIJfYFr0EbtbLbcI3JFCJ0=
+			hHrrNIwd4RJJ5iKHZZI3euIEvTtNXOC3u8MOc3i3OcY=
 			</data>
 		</dict>
 		<key>Headers/NSObject+UAAdditions.h</key>
@@ -1022,6 +1026,13 @@
 			4E2Mjx98aFexNaVrPm+jRoGaFoCeF0qTh+afsCCF2gM=
 			</data>
 		</dict>
+		<key>Headers/UAAirshipChatModuleLoaderFactory.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2hX78qHbH6YjIXvvYTwE+DxxkN3u+TUgho1M2rbJ5Jk=
+			</data>
+		</dict>
 		<key>Headers/UAAnalytics.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1131,7 +1142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+nyugAAOc2X2cawqIUeUINO4oUiwtKZEZ2JoBRS1FtE=
+			WcnQ4H6RSA5BmFzG7rmYkLluvrggu8DCvC0dWE5iCjo=
 			</data>
 		</dict>
 		<key>Headers/UAChannelCapture.h</key>
@@ -1180,7 +1191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9QMY36pqqL1xq8gGnSMYRDUNNjyHcwg0TJjg8/yJ0zE=
+			zg37Xo9tnZkcq3cUPpt0BWA3WuQC46ufVIkcmwmkUmw=
 			</data>
 		</dict>
 		<key>Headers/UACustomEvent.h</key>
@@ -1558,14 +1569,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vzpsMi4y9WsM3vScxWS7/9QKyMJR5ITquIypDtthIKI=
+			pdpQK2YNZxekF3VAY2GLQdh5RvUCE7h6NmTTVU7DGB4=
 			</data>
 		</dict>
 		<key>Headers/UARemoteConfigURLManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fw2vuRe7WvXK9HYU7bcFoMMJzBTeuF+DpDEfahRm2HY=
+			K8BlMGIhYJq3UBqnqwedArDDYSJksQCKjZC7/Aehzb8=
 			</data>
 		</dict>
 		<key>Headers/UARemoteDataPayload.h</key>
@@ -1593,14 +1604,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JUBalu7AUoFrCITwTQSn0SrLvPtcP45yHbjSILEDw1I=
+			pHeCANDZnNeOer949HMjN4bcSYTI9M298E9n50eHlcg=
 			</data>
 		</dict>
 		<key>Headers/UARequestSession.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p01Ev1uO65w6Q32s/IPik5+JNT1kvcNZATjAmJTYFAU=
+			k80UeMAx6zl48r6hmihOgxoE+93t38xi82kEKyHtV/A=
 			</data>
 		</dict>
 		<key>Headers/UARetailEventTemplate.h</key>
@@ -1614,7 +1625,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d4i6U31SL6aptDIFYomAiMDKct5pMa1v9TAq3ZLAjdQ=
+			mF+fEhglZQV6x04BmDxLifVjr5Xcd9pyls5Fqy5Li7w=
 			</data>
 		</dict>
 		<key>Headers/UASearchEventTemplate.h</key>
@@ -1881,7 +1892,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VwRP6QMx2CWJVGiD+VMBzryVueWQndoPHVaGLUkbefc=
+			InTg2ZIvSlfIbVYTus9nmmyK/jiP9/UD1xHqxuVESlk=
 			</data>
 			<key>optional</key>
 			<true/>

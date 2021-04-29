@@ -1,0 +1,11 @@
+framework module AirshipChat {
+  umbrella header "AirshipChat.h"
+
+  export *
+  module * { export * }
+}
+
+module AirshipChat.Swift {
+    header "AirshipChat-Swift.h"
+    requires objc
+}

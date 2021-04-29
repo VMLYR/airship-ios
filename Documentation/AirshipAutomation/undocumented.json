@@ -160,6 +160,20 @@
       "symbol": "UALegacyInAppMessaging.builderExtender",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAScheduleDeferredData.h",
+      "line": 22,
+      "symbol": "UAScheduleDataDeferredType.UAScheduleDataDeferredTypeUnknown",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/ios-library/ios-library/Airship/AirshipAutomation/Source/Public/UAScheduleDeferredData.h",
+      "line": 25,
+      "symbol": "UAScheduleDataDeferredType.UAScheduleDataDeferredTypeInAppMessage",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
     }
   ],
   "source_directory": "/Users/runner/work/ios-library/ios-library"

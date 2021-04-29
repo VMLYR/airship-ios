@@ -1,0 +1,137 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios14.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AirshipChat
+@_exported import AirshipChat
+import AirshipCore
+import CoreData
+import Foundation
+import Swift
+import UIKit
+import os
+@objc(UAirshipChatDelegate) public protocol ChatOpenDelegate {
+  @objc func openChat(message: Swift.String?)
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc(UAirshipChat) public class Chat : AirshipCore.UAComponent, AirshipCore.UAPushableComponent {
+  @objc weak public var openChatDelegate: AirshipChat.ChatOpenDelegate?
+  @objc public var enabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc public var style: AirshipChat.ChatStyle?
+  @objc public var conversation: AirshipChat.ConversationProtocol {
+    @objc get
+  }
+  @objc override dynamic public func onComponentEnableChange()
+  @objc override dynamic public func onDataCollectionEnabledChanged()
+  @objc public func openChat()
+  @objc public func openChat(message: Swift.String?)
+  @objc public func receivedRemoteNotification(_ notification: AirshipCore.UANotificationContent, completionHandler: @escaping (UIKit.UIBackgroundFetchResult) -> Swift.Void)
+  @objc deinit
+  @objc override dynamic public init(dataStore: AirshipCore.UAPreferenceDataStore?)
+}
+@_inheritsConvenienceInitializers @objc(UAChatStyle) public class ChatStyle : ObjectiveC.NSObject {
+  @objc public var title: Swift.String?
+  @objc public var titleFont: UIKit.UIFont?
+  @objc public var titleColor: UIKit.UIColor?
+  @objc public var outgoingTextColor: UIKit.UIColor?
+  @objc public var incomingTextColor: UIKit.UIColor?
+  @objc public var messageTextFont: UIKit.UIFont?
+  @objc public var outgoingChatBubbleColor: UIKit.UIColor?
+  @objc public var incomingChatBubbleColor: UIKit.UIColor?
+  @objc public var dateColor: UIKit.UIColor?
+  @objc public var dateFont: UIKit.UIFont?
+  @objc public var backgroundColor: UIKit.UIColor?
+  @objc public var navigationBarColor: UIKit.UIColor?
+  @objc public var tintColor: UIKit.UIColor?
+  @objc override dynamic public init()
+  public init(file: Swift.String)
+  @objc override dynamic public func setValue(_ value: Any?, forUndefinedKey key: Swift.String)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+@objc(UAConversationDelegate) public protocol ConversationDelegate : AnyObject {
+  @objc func onMessagesUpdated()
+  @objc func onConnectionStatusChanged()
+}
+@available(iOS 13.0, *)
+@objc(UAConversationProtocol) public protocol ConversationProtocol {
+  @objc var isConnected: Swift.Bool { get }
+  @objc var delegate: AirshipChat.ConversationDelegate? { get set }
+  @objc func sendMessage(_ text: Swift.String?, attachment: Foundation.URL?)
+  @objc func sendMessage(_ text: Swift.String)
+  @objc func fetchMessages(completionHandler: @escaping (Swift.Array<AirshipChat.ChatMessage>) -> ())
+}
+@available(iOS 13.0, *)
+@objc(UAChatMessageDirection) public enum ChatMessageDirection : Swift.UInt {
+  case outgoing = 0
+  case incoming = 1
+  public typealias RawValue = Swift.UInt
+  public init?(rawValue: Swift.UInt)
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc(UAChatMessage) public class ChatMessage : ObjectiveC.NSObject {
+  @objc final public let messageID: Swift.String
+  @objc final public let text: Swift.String?
+  @objc final public let timestamp: Foundation.Date
+  @objc final public let direction: AirshipChat.ChatMessageDirection
+  @objc final public let isDelivered: Swift.Bool
+  @objc final public let attachment: Foundation.URL?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+@objc(UAirshipChatModuleLoader) public class AirshipChatModuleLoader : ObjectiveC.NSObject, AirshipCore.UAModuleLoader, AirshipCore.UAAirshipChatModuleLoaderFactory {
+  public init(_ module: AirshipChat.Chat)
+  @objc public static func moduleLoader(with dataStore: AirshipCore.UAPreferenceDataStore, config: AirshipCore.UARuntimeConfig, channel: AirshipCore.UAChannel) -> AirshipCore.UAModuleLoader
+  @objc public func components() -> [AirshipCore.UAComponent]
+  @objc public func registerActions(_ registry: AirshipCore.UAActionRegistry)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@objc(UAOpenChatAction) public class OpenChatAction : AirshipCore.UAAction {
+  public static let name: Swift.String
+  public typealias AirshipChatProvider = () -> AirshipChat.Chat
+  @objc override convenience dynamic public init()
+  @objc override dynamic public func acceptsArguments(_ arguments: AirshipCore.UAActionArguments) -> Swift.Bool
+  @objc override dynamic public func perform(with arguments: AirshipCore.UAActionArguments, completionHandler: @escaping AirshipCore.UAActionCompletionHandler)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc(UAChatViewController) public class ChatViewController : UIKit.UIViewController, UIKit.UITableViewDataSource, UIKit.UITableViewDelegate, UIKit.UITextViewDelegate, AirshipChat.ConversationDelegate {
+  @objc public var messageDraft: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc public var chatStyle: AirshipChat.ChatStyle?
+  @objc public func onMessagesUpdated()
+  @objc public func onConnectionStatusChanged()
+  @objc override dynamic public var nibBundle: Foundation.Bundle? {
+    @objc get
+  }
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewDidLayoutSubviews()
+  @objc public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc public func textViewDidEndEditing(_ textView: UIKit.UITextView)
+  @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@objc(UAChatResources) public class ChatResources : ObjectiveC.NSObject {
+  @objc public static func bundle() -> Foundation.Bundle?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@available(iOS 13.0, *)
+extension AirshipChat.ChatMessageDirection : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension AirshipChat.ChatMessageDirection : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension AirshipChat.ChatMessageDirection : Swift.RawRepresentable {}

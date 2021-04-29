@@ -102,7 +102,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3hHuXniKvtmrKYp6q36jSja4EGE=
+		eXLaZHhqVtHIdtLbBjjGQa1c17A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>UADefaultMessageCenterListViewController.nib</key>
 		<data>
-		rsh69g/Bg2v/8Ruy2M8byBU7Es4=
+		oHuL6c1J25EIXimLJjA2vrEPcFE=
 		</data>
 		<key>UADefaultMessageCenterMessageViewController.nib</key>
 		<data>
-		+VpQ35+8hcd9nWHVF0E79aU8NrI=
+		J4qQ9ygec2g3Yq2Gbux5mSzMrEc=
 		</data>
 		<key>UAInbox.momd/UAInbox 2.mom</key>
 		<data>
@@ -138,7 +138,7 @@
 		</data>
 		<key>UAMessageCenterListCell.nib</key>
 		<data>
-		IYduCOasQpVNQvMo9Y2n7mo2S4I=
+		bdZ/3o1xKRg2DELQ0rCgyGEef7g=
 		</data>
 		<key>UAMessageCenterPlaceholderIcon.png</key>
 		<data>
@@ -326,14 +326,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RkSnrED6TfJKSI4qclvpJ8mTTTKh+LmJ3hTUeRkFtb4=
+			ZWogWwSoCZr8LHuN3E2ygJIL/40ADHaXrdpNxRnjUHE=
 			</data>
 		</dict>
 		<key>UADefaultMessageCenterMessageViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qQ39ExuFoFNfzoOBvWNnH0fy2nc7tDjGOcAjnAIydeo=
+			EOyE7l0/2TUky8u5LL2Hy49k1COuzUekgNw8146A3fY=
 			</data>
 		</dict>
 		<key>UAInbox.momd/UAInbox 2.mom</key>
@@ -375,7 +375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TeHIHrGLtYGGwGXBjn2W3InMpvDotrHM05CNpXYssyc=
+			n45e0ju1vipLG9244/ZPHAbMm3OQCkRA7SJCMSkNjSI=
 			</data>
 		</dict>
 		<key>UAMessageCenterPlaceholderIcon.png</key>

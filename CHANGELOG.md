@@ -3,6 +3,15 @@
 
 [Migration Guides](https://github.com/urbanairship/ios-library/tree/main/Documentation/Migration)
 
+## Version 14.4.0 April 26, 2021
+
+Minor release that adds support for Airship Live Chat.
+
+### Changes
+- Added new AirshipChat module.
+- Allow inline media playback in message center.
+- Fixed automatic inProduction selection for catalyst apps.
+
 ## Version 14.3.1 April 5, 2021
 
 Patch fixing an issue with AirshipAccengage that caused apps without a previous Accengage installation to miss first open analytics. Apps including the AirshipAccengage module and experiencing issues with first open data are encouraged to update.
