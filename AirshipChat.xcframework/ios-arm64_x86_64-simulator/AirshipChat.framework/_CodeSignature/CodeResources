@@ -6,7 +6,7 @@
 	<dict>
 		<key>ChatMessageCell.nib</key>
 		<data>
-		095O+ewdE/CckFMRt5KJqJkbvvY=
+		eB8sRdhuSxh3Y1kvmljFxc2aNWs=
 		</data>
 		<key>ChatMessageData.momd/ChatMessageData.mom</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qjQSjEJvPn1tvTP4TU+9+OPDDow=
+		JiH8NnXYKEHv/RFSq9L5mmto24M=
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8G75NxvCYSpNeqbDTdGJuopcE1I=
+		D9l6kM+pRU7EC6xJFEUdjsBNPLk=
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8G75NxvCYSpNeqbDTdGJuopcE1I=
+		D9l6kM+pRU7EC6xJFEUdjsBNPLk=
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ykT5It3nOsFJ+p52/s2IxzJTb0w=
+		Cf/Yx1HOlzvYbRtxZkEDmFSZB30=
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/AirshipChat.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ykT5It3nOsFJ+p52/s2IxzJTb0w=
+		Cf/Yx1HOlzvYbRtxZkEDmFSZB30=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>UAChatViewController.nib</key>
 		<data>
-		sMtiDYxibcwqjXn9e8mGT5PQnNQ=
+		THGDKA9JpYMR0Le38hZfSCn+mzo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bCD5RGU/HqfM3F+sKXlaUkLSJL7jaJPrv4WHmyixvTQ=
+			KVv2f1ILM1Q7dzgpAlZj7z6DsQif1gm13+nAVYe1Nyg=
 			</data>
 		</dict>
 		<key>ChatMessageData.momd/ChatMessageData.mom</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDIwvdbt1bTk54CasIq9tDrCunT9FjShiHiumhCyxns=
+			S+jUrRGhm02z/5AWyKuRWW0xB+DaZa0TTNQBGbVrk28=
 			</data>
 		</dict>
 		<key>Modules/AirshipChat.swiftmodule/arm64.swiftdoc</key>
@@ -161,7 +161,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IDIwvdbt1bTk54CasIq9tDrCunT9FjShiHiumhCyxns=
+			S+jUrRGhm02z/5AWyKuRWW0xB+DaZa0TTNQBGbVrk28=
 			</data>
 		</dict>
 		<key>Modules/AirshipChat.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -182,7 +182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ir4F6DGeafW2fEBtiB3vOfOPqk5WVLmY+sjxdu0gYoM=
+			crDsF3iaOuJbCeroYH16hmTo1tT7su8uZALHHYT+lTI=
 			</data>
 		</dict>
 		<key>Modules/AirshipChat.swiftmodule/x86_64.swiftdoc</key>
@@ -203,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ir4F6DGeafW2fEBtiB3vOfOPqk5WVLmY+sjxdu0gYoM=
+			crDsF3iaOuJbCeroYH16hmTo1tT7su8uZALHHYT+lTI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -217,7 +217,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qp7RAp2Rpix7W+8Wi/d3f1JW8dN4irpX9EA4/KPbrgY=
+			qtJsQzqO7cMXvJQIv2s8mKzNE7qRsa9lBzuuyZhJ/pk=
 			</data>
 		</dict>
 	</dict>

@@ -218,7 +218,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BSkvxaYilrpRHySvBRlPUPVGvIo=
+		Q7JE2zHET0x7iOO4VdokrO6AX44=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -286,31 +286,31 @@
 		</data>
 		<key>UAInAppMessageBannerContentView.nib</key>
 		<data>
-		gC4S8H3awTYAot5AhWK9lQorUqc=
+		8HhNPvKFEHM/eIvKhuQz/oUv/+4=
 		</data>
 		<key>UAInAppMessageBannerView.nib</key>
 		<data>
-		ygSNAcZWVEQl7gWDa7Kid0quBeU=
+		+mSE43wpcHpSntzCJW8f8rxktxA=
 		</data>
 		<key>UAInAppMessageButtonView.nib</key>
 		<data>
-		YMvc9NIooaeGZzoMwC+CN43ZCrk=
+		1UliygtFtkfFaijSbwtrb9ciesI=
 		</data>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<data>
-		auB4qhdYzUpgcJnzHZWNqTmhFtA=
+		GWkUJJ5Y3Bvrbn35JEVLI/MxHDk=
 		</data>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<data>
-		RyWObLxluO5kBguJ9lNjgwjrJTM=
+		n9ep14du4PXlZ6NBa6SClAMfagk=
 		</data>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<data>
-		PPiWw/Z/YAZWkumn+Z0o3g8+7vk=
+		NqCZP3di6NZPsHCfdm0iAqyaULw=
 		</data>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<data>
-		IF3+TSjhVJiCwTSOCe7PPXHE1LE=
+		3ZPLfAmMuDIHix7Q1CXpd+Msyxc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -802,49 +802,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vts0Y+vRm5BYndeNlMmpd/9Y+WvnRL8NjpBSiBeWvQc=
+			cgjke57zEjnr8n4D4ikrxB5ko0Y1yrewfRpj6evIFGs=
 			</data>
 		</dict>
 		<key>UAInAppMessageBannerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nzBOdzDwQ9G+23ji1jVF35tWLAJAZAdxk7i4J1t7sJE=
+			mHgzdnIOCpEC19k9F7cos/q0JyEH0wkPso35+p48YJ8=
 			</data>
 		</dict>
 		<key>UAInAppMessageButtonView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y51bayLRrQG+USbRZUXBgxvjMzptdmaV9RwTCqfYmL4=
+			oYWtBeIpIU8ln1lG5A/6LNPKwYmxjnhumqNImeOZ3wg=
 			</data>
 		</dict>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PoHXl7C6eynFXvhYfRxTX0VZBebWx9j0u5EUxnZuaQ=
+			AARBNSERcqWH3J3wi95IdzTck6luKVi31iqnpkOP/i8=
 			</data>
 		</dict>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xsr4MO0mNavzlbJgFaTvUB6nzL0Ugx8rIrlamowMXag=
+			fdKOT5X+VHcfujnOuor1uOrZnp/ygpKTs3dRFe9DKR8=
 			</data>
 		</dict>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dEmyTCH9Z64zBRKS7UZ8nV8nxLziIcSEF17u8RL/lV0=
+			VdY46BgU2/7G57o+zpji0Z6YKVuqz0EFjwGoyvRZzxY=
 			</data>
 		</dict>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wVk0NOva3Q6t/hE/IQNRNgnttoIOj9k7gnzQARcVql4=
+			p6IONgqndX90OVx9XWw1pp41FVYewTz/1UVwaZdiEPI=
 			</data>
 		</dict>
 	</dict>

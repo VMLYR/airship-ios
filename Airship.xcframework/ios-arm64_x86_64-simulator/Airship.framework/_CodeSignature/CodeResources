@@ -6,7 +6,7 @@
 	<dict>
 		<key>ChatMessageCell.nib</key>
 		<data>
-		DL/1vsppk0s6QDa9vmCopThrE8Q=
+		orckcyrsjncCVNaFJmbgvsJyc/8=
 		</data>
 		<key>ChatMessageData.momd/ChatMessageData.mom</key>
 		<data>
@@ -854,7 +854,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HzP+0KHMrfxCw1wBFYB86OBkKpo=
+		QdHl978GqcGduwFiyttxsL4qbG4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1230,11 +1230,11 @@
 		</data>
 		<key>UADefaultMessageCenterListViewController.nib</key>
 		<data>
-		qDp0JYW2BGNJTmhY80TaqSliyQ0=
+		ljvlnBO+4ax3Yv2IvTvJcvJuPZ0=
 		</data>
 		<key>UADefaultMessageCenterMessageViewController.nib</key>
 		<data>
-		vxM/EvK/rA/fMGxDatve2I+aHlg=
+		CwgxyHHF52dhBWnORZ1cdgM6kMs=
 		</data>
 		<key>UAEvents.momd/UAEvents.mom</key>
 		<data>
@@ -1258,31 +1258,31 @@
 		</data>
 		<key>UAInAppMessageBannerContentView.nib</key>
 		<data>
-		8KcIBNnI9T/ZSyYBrjTFKNobSxE=
+		cXYEl+/uEq/3xGsIQXzkMWsgVSE=
 		</data>
 		<key>UAInAppMessageBannerView.nib</key>
 		<data>
-		+Xg6xD7XNntnoFeMzVV22yjwTgc=
+		WZL9AcqX75LzT0xQ7p6QoMIWxcc=
 		</data>
 		<key>UAInAppMessageButtonView.nib</key>
 		<data>
-		a1wu+16OLQjUdgLXa9CaXIZDPP8=
+		WoR/JAhQS8bH2Mz6lF3Db8s+b+0=
 		</data>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<data>
-		PEN46Jd0KhLA2yrvEQZC9in/wf0=
+		DqXpxPMQ88USEzQUbcltsDwQcS4=
 		</data>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<data>
-		TPUrJFapjy4I9lMmawTVSIn+kq8=
+		vvGmjG5BMeCQ1eTwfqblCs5DL/A=
 		</data>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<data>
-		f+o58Cw5rXjlvn+Le9tKK8zUN7Y=
+		b80qfgOxSKXOkAzuj6+lobn3Nks=
 		</data>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<data>
-		bVrBODvmru4vCaXojsPdlNgyZCo=
+		rUD9ESFzA3UOyhiSVlnWVx0QPkg=
 		</data>
 		<key>UAInbox.momd/UAInbox 2.mom</key>
 		<data>
@@ -1306,7 +1306,7 @@
 		</data>
 		<key>UAMessageCenterListCell.nib</key>
 		<data>
-		F0gc/4yAVBvuik+RXSDHJxNsNRc=
+		5WDsP6CciutQpXpj3s3Ae8Naj5M=
 		</data>
 		<key>UAMessageCenterPlaceholderIcon.png</key>
 		<data>
@@ -1322,7 +1322,7 @@
 		</data>
 		<key>UARateAppPromptView.nib</key>
 		<data>
-		apwL/TRKDMfztovFKGWZ4RGihhk=
+		24lRbQybHCK2kBb+ZSrTPGoKaug=
 		</data>
 		<key>UARemoteData.momd/UARemoteData 2.mom</key>
 		<data>
@@ -1626,7 +1626,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hf0S2l6kz8HL6N/bbXbf+6K9x8pDHKsbv0S0VYfgGs=
+			FleGtycC8WYvwy9lsJGiHfbEXY0/4S826YONZ55gDHg=
 			</data>
 		</dict>
 		<key>ChatMessageData.momd/ChatMessageData.mom</key>
@@ -3761,14 +3761,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQd4Nz6tsLAQTsEPdNSeNploOmPASFMHDNKCcUo6/jM=
+			waRJg7cCHntDifs4pGjGEe7kbDJwkWbTsSDjFrkuZJE=
 			</data>
 		</dict>
 		<key>UADefaultMessageCenterMessageViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZfMqL3p3FxFi4S1JIkMCQiXi2/95Jy4Qa+jXMcozoeQ=
+			JniWTqXl+2gOyesEduT86+uB6rob6UE3xZ0KSF3VuPw=
 			</data>
 		</dict>
 		<key>UAEvents.momd/UAEvents.mom</key>
@@ -3810,49 +3810,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d79nVdtCvaRaLwPIMCFtnSY3DK0GqY5EQZ9C/W6e3WA=
+			OMn8CgkHJiZK7mhpuEooO0Ltu8ojc8LuOWswfg80PTE=
 			</data>
 		</dict>
 		<key>UAInAppMessageBannerView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yrPw4lTgOrzyr4oi8eqom6D9LVxGPf39KATGkvDIIjw=
+			dWP0DIEuO686M2/hSmLObxk65W6kTA9dz4HQIbViD/A=
 			</data>
 		</dict>
 		<key>UAInAppMessageButtonView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CKBKsKuDgjwghbNMTdPRD4dSHpKD6MBVvYqTnqy8muc=
+			u1ezZzHJMIe8tVv7wFaID6JLwO1WBk/LNdWb+StrB6Q=
 			</data>
 		</dict>
 		<key>UAInAppMessageFullScreenViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DQJotqoprsNwuccfOCVxTYmK1A+GxX72Hcuh7mT7eD4=
+			39r/ZYcpbMiFIYZq4nUiRC0iCn+G1KHkVYGIP2cq8BY=
 			</data>
 		</dict>
 		<key>UAInAppMessageHTMLViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			13kvaqNfUndZdCFI3cviCGvZM7QOdVV3OYoRLj8Ry6I=
+			yAywsDPeccppM5SYSN+sK/993g6hpoaZ3KIen2KGLgY=
 			</data>
 		</dict>
 		<key>UAInAppMessageModalViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l0+C0iBnllTx4kv34eLgZorDYAV0fkhN/JzD3cQttmc=
+			y9v6PzYlyMsVkKsPIhtYuldaji48g9G7fGOwZaZNwOI=
 			</data>
 		</dict>
 		<key>UAInAppMessageResizableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s/PbrnTV/L2FdDiIvS7YI28aRLPewF3tWyKK8PbgOiU=
+			Oi1jEGr9NP6+BchIQ71wJPEmoWHBjeGXhcqwIrWipTI=
 			</data>
 		</dict>
 		<key>UAInbox.momd/UAInbox 2.mom</key>
@@ -3894,7 +3894,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lsJyuLBdrTC/gtim84VfIBxuzANEgIknQoqQtGC5lY=
+			TQO6IxlXutSLl6tkjey4rCdnfzKmiSykdxd37VLVnG0=
 			</data>
 		</dict>
 		<key>UAMessageCenterPlaceholderIcon.png</key>
@@ -3922,7 +3922,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uNZmwB8EydOXpLmiIdirccj6ySiZ5C5CwyYtG7mqRSY=
+			E/qAEPUOIiSieTZg068CuACvBUa+AbzZ3OM9ONhnynQ=
 			</data>
 		</dict>
 		<key>UARemoteData.momd/UARemoteData 2.mom</key>
